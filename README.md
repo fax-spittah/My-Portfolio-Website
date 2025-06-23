@@ -1,2 +1,3 @@
-# My-Portfolio-Website
-This is my own website where key information about myself can be found
+# My Portfolio website
+
+This is my own website which will display some key information about me educationally, professionally and more.
