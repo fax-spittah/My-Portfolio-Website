@@ -1,17 +1,13 @@
 {
   "name": "my-portfolio",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "type": "module",
+  "version": "0.0.1",
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
-    "preview": "astro preview"
+    "preview": "astro preview",
+    "astro": "astro"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "module",
   "dependencies": {
     "astro": "^5.10.1"
   }
