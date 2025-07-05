@@ -11,9 +11,25 @@ import Layout from "../../layouts/Layout.astro";
     onclick="window.print()">Print CV</button
   >
   <div
-    class="div flex flex-row justify-between w-full max-w-4xl mx-auto my-10 border-1 border-black-100 mb-[1rem] shadow-xl"
+    class="cv-container flex flex-row justify-between w-full max-w-4xl mx-auto my-10 border-1 border-black-100 mb-[1rem] shadow-xl"
   >
     <CVLeftSide />
     <CVMain />
   </div>
+
+  <style>
+    @media print {
+      .btn {
+        display: none;
+      }
+
+      .cv-container {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        border: none;
+        box-shadow: none;
+      }
+    }
+  </style>
 </Layout>
