@@ -1,4 +1,5 @@
 ---
+import IconTextAlign from "./IconTextAlign.astro";
 interface Props {
   name: string;
   date: string;
@@ -32,11 +33,15 @@ const {
       {jobTitle && <p class="text-sm text-gray-600 mb-2">{jobTitle}</p>}
       {
         universityName && (
-          <p class="text-sm text-gray-600 mb-2">{universityName}</p>
+          <p class="text-sm text-gray-600 mb-2">
+            <IconTextAlign iconName="location" text={universityName} />
+          </p>
         )
       }
     </div>
-    <span class="text-sm text-gray-500 mb-2">{date}</span>
+    <span class="text-sm text-gray-500 mb-2">
+      <IconTextAlign iconName="calendar" text={date} /></span
+    >
   </div>
   {
     Array.isArray(description) ? (

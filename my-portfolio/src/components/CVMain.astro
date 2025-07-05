@@ -1,5 +1,6 @@
 ---
 import CVItem from "./CVItem.astro";
+import IconTextAlign from "./IconTextAlign.astro";
 ---
 
 <div class="w-[70%] flex flex-col gap-4 p-5">
@@ -15,7 +16,13 @@ import CVItem from "./CVItem.astro";
   </div>
   <div class="h-[85%] flex flex-col gap-4">
     <div>
-      <h2 class="text-xl font-bold">EDUCATION</h2>
+      <h2 class="text-xl font-bold">
+        <IconTextAlign
+          iconName="graduate-cap"
+          text="EDUCATION"
+          section="title"
+        />
+      </h2>
       <hr />
       <CVItem
         name="Bachelor's in Electronics-ICT - Major ICT"
@@ -29,7 +36,13 @@ import CVItem from "./CVItem.astro";
     </div>
 
     <div>
-      <h2 class="text-xl font-bold">PROFESSIONAL EXPERIENCE</h2>
+      <h2 class="text-xl font-bold">
+        <IconTextAlign
+          iconName="work-case"
+          text="PROFESSIONAL EXPERIENCE"
+          section="title"
+        />
+      </h2>
       <hr />
       <CVItem
         name="Avanade"
@@ -38,7 +51,9 @@ import CVItem from "./CVItem.astro";
         description="Avanade is a Microsoft and Accenture joint venture specializing in Microsoft-based solutions. As a Full Stack Developer Intern, I contributed to a web-based chat solution enabling real-time support between users and agents, integrated with third-party applications."
       />
       <div>
-        <h2 class="text-xl font-bold mb-[0.2rem]">PROJECTS</h2>
+        <h2 class="text-xl font-bold mb-[0.2rem]">
+          <IconTextAlign iconName="tool" text="PROJECTS" section="title" />
+        </h2>
         <hr />
       </div>
       <div class="flex flex-col gap-4">

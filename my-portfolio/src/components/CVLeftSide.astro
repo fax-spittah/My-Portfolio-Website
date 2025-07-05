@@ -1,5 +1,6 @@
 ---
 import placeholderProfileImage from "../assets/placeholder_profile_image.png";
+import IconTextAlign from "./IconTextAlign.astro";
 ---
 
 <div class="flex flex-col gap-4 p-5 border-r-1 border-black-100">
@@ -12,11 +13,15 @@ import placeholderProfileImage from "../assets/placeholder_profile_image.png";
   <div>
     <h2 class="text-xl font-bold">CONTACT</h2>
     <hr />
-    <p>My address</p>
-    <p>My phone</p>
-    <p>My email</p>
-    <p>My nationality</p>
-    <p>My linkedIn profile</p>
+    <IconTextAlign iconName="home" text="My address" section="contact" />
+    <IconTextAlign iconName="phone" text="My phone" section="contact" />
+    <IconTextAlign iconName="email" text="My email" section="contact" />
+    <IconTextAlign iconName="world" text="My nationality" section="contact" />
+    <IconTextAlign
+      iconName="linkedIn"
+      text="My linkedIn profile"
+      section="contact"
+    />
   </div>
 
   <div>
