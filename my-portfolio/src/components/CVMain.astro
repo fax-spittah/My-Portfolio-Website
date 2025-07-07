@@ -1,4 +1,9 @@
-<div class="w-[70%] ml-10 flex flex-col gap-4">
+---
+import CVItem from "./CVItem.astro";
+import IconTextAlign from "./IconTextAlign.astro";
+---
+
+<div class="w-[70%] flex flex-col gap-4 p-5">
   <div class="h-[9rem]">
     <h1 class="text-3xl font-bold">Edison Nyingchuo Kiseh</h1>
     <p>Full Stack Developer</p>
@@ -11,30 +16,54 @@
   </div>
   <div class="h-[85%] flex flex-col gap-4">
     <div>
-      <h2 class="text-xl font-bold">EDUCATION</h2>
+      <h2 class="text-xl font-bold">
+        <IconTextAlign
+          iconName="graduate-cap"
+          text="EDUCATION"
+          section="title"
+        />
+      </h2>
       <hr />
-      <p>
-        My degree - Lorem Ipsum is simply dummy text of the printing and
-        typesetting industry.
-      </p>
+      <CVItem
+        name="Bachelor's in Electronics-ICT - Major ICT"
+        date="2022 - 2025"
+        universityName="Thomas More University of Applied Sciences"
+        description={[
+          "Graduated with a final average of 76.50%.",
+          "Honors: Received the Willy Asselman award for the best bachelor thesis of Electronics-ICT.",
+        ]}
+      />
     </div>
 
     <div>
-      <h2 class="text-xl font-bold">PROFESSIONAL EXPERIENCE</h2>
+      <h2 class="text-xl font-bold">
+        <IconTextAlign
+          iconName="work-case"
+          text="PROFESSIONAL EXPERIENCE"
+          section="title"
+        />
+      </h2>
       <hr />
-      <p>
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum
-      </p>
-    </div>
-
-    <div>
-      <h2 class="text-xl font-bold">PROJECTS</h2>
-      <hr />
-      <p>
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum
-      </p>
+      <CVItem
+        name="Avanade"
+        date="Feb 2025 - Jun 2025"
+        jobTitle="Full Stack Developer Intern"
+        description="Avanade is a Microsoft and Accenture joint venture specializing in Microsoft-based solutions. As a Full Stack Developer Intern, I contributed to a web-based chat solution enabling real-time support between users and agents, integrated with third-party applications."
+      />
+      <div>
+        <h2 class="text-xl font-bold mb-[0.2rem]">
+          <IconTextAlign iconName="tool" text="PROJECTS" section="title" />
+        </h2>
+        <hr />
+      </div>
+      <div class="flex flex-col gap-4">
+        <CVItem
+          name="Avanade Support Hub"
+          date="Feb 2025 - Jun 2025"
+          technologies="React, Next.js, C# .NET, Azure Communication Services"
+          description="A customizable chat solution connecting users with support agents in real-time. Features include secure two-way (duplex) messaging, WebSocket-based real-time updates, and multi-agent management."
+        />
+      </div>
     </div>
   </div>
 </div>

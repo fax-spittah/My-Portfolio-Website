@@ -1,0 +1,38 @@
+---
+import { Icon } from "astro-icon/components";
+
+interface Props {
+  iconName: string;
+  text: string;
+  section?: string;
+}
+
+const { iconName, text, section }: Props = Astro.props;
+---
+
+<p class="flex items-center">
+  {
+    section === "title" ? (
+      <>
+        <>
+          <Icon name={iconName} />
+          <span class="ml-[0.8rem]">{text}</span>
+        </>
+      </>
+    ) : section === "contact" ? (
+      <>
+        <>
+          <Icon name={iconName} />
+          <span class="ml-[0.8rem]">{text}</span>
+        </>
+      </>
+    ) : (
+      <>
+        <>
+          <Icon name={iconName} class="text-gray-500" />
+          <span class="ml-[0.3rem]">{text}</span>
+        </>
+      </>
+    )
+  }
+</p>
