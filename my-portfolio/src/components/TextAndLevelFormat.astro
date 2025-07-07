@@ -1,0 +1,13 @@
+---
+interface Props {
+  language: string;
+  level: string;
+}
+
+const { language, level }: Props = Astro.props;
+---
+
+<p class="flex justify-between">
+  <b>{language}</b>
+  <span><i>{level}</i></span>
+</p>
