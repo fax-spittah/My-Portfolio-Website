@@ -1,18 +1,11 @@
 ---
-import placeholderProfileImage from "../assets/placeholder_profile_image.png";
 import IconTextAlign from "./IconTextAlign.astro";
 import TextAndLevelFormat from "./TextAndLevelFormat.astro";
 ---
 
 <div
-  class="flex flex-col gap-4 p-5 border-r-1 border-black-100 w-[30%] max-w-[30%]"
+  class="flex flex-col gap-4 pl-5 pr-5 pb-5 border-r-1 border-black-100 md:w-[30%] md:max-w-[30%]"
 >
-  <img
-    src={placeholderProfileImage.src}
-    alt="profile photo"
-    class="w-[10.5rem] mx-auto"
-  />
-
   <div>
     <h2 class="text-xl font-bold">CONTACT</h2>
     <hr />
@@ -70,3 +63,11 @@ import TextAndLevelFormat from "./TextAndLevelFormat.astro";
     </div>
   </div>
 </div>
+
+<style>
+  @media print {
+    .border-r-1 {
+      border: 0px;
+    }
+  }
+</style>

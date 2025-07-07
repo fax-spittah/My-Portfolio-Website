@@ -1,0 +1,51 @@
+---
+import placeholderProfileImage from "../assets/placeholder_profile_image.png";
+---
+
+<div
+  class="cv-header-container md:max-w-[100%] md:flex md:flex-row md:flex-between"
+>
+  <div
+    class="cv-header-image md:w-[30%] md:max-w-[30%] md:mx-auto border-r-1 border-black-100"
+  >
+    <img
+      src={placeholderProfileImage.src}
+      alt="profile photo"
+      class="w-[10.5rem] mx-auto"
+    />
+  </div>
+  <div class="cv-header-profile md:max-w-[70%] md:mx-auto p-5">
+    <h1 class="text-3xl font-bold">Edison Nyingchuo Kiseh</h1>
+    <p>Full Stack Developer</p>
+    <p>
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      Lorem Ipsum has been the industry's standard dummy text ever since the
+      1500s, when an unknown printer took a galley of type and scrambled it to
+      make a type specimen book.
+    </p>
+  </div>
+</div>
+
+<style>
+  @media print {
+    .border-r-1 {
+      border: 0px;
+    }
+
+    .cv-header-image {
+      margin: 0;
+    }
+
+    .cv-header-profile {
+      max-width: 77%;
+      margin: 0;
+    }
+
+    .cv-header-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      max-width: 100%;
+    }
+  }
+</style>
