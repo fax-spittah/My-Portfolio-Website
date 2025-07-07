@@ -1,9 +1,12 @@
 ---
 import placeholderProfileImage from "../assets/placeholder_profile_image.png";
 import IconTextAlign from "./IconTextAlign.astro";
+import TextAndLevelFormat from "./TextAndLevelFormat.astro";
 ---
 
-<div class="flex flex-col gap-4 p-5 border-r-1 border-black-100">
+<div
+  class="flex flex-col gap-4 p-5 border-r-1 border-black-100 w-[30%] max-w-[30%]"
+>
   <img
     src={placeholderProfileImage.src}
     alt="profile photo"
@@ -29,14 +32,27 @@ import IconTextAlign from "./IconTextAlign.astro";
     <hr />
     <div class="flex flex-col gap-2">
       <div>
-        <p>Programming</p>
-        <p><b>C</b> level</p>
-        <p><b>C++</b> level</p>
-        <p><b>C#</b> level</p>
-        <p><b>Python</b> level</p>
+        <p class="text-xl"><i>Programming</i></p>
+        <TextAndLevelFormat language="C" level="level" />
+        <TextAndLevelFormat language="C++" level="level" />
+        <TextAndLevelFormat language="C#" level="level" />
+        <TextAndLevelFormat language="Python" level="level" />
+        <TextAndLevelFormat language="HTML/CSS" level="level" />
+        <TextAndLevelFormat language="React" level="level" />
+        <TextAndLevelFormat language="Angular" level="level" />
+        <TextAndLevelFormat language="Ionic" level="level" />
+        <TextAndLevelFormat language="Electron" level="level" />
+        <TextAndLevelFormat language="SQL" level="level" />
+        <TextAndLevelFormat language="PHP" level="level" />
+        <TextAndLevelFormat language="Bash" level="level" />
+        <TextAndLevelFormat language="Powershell" level="level" />
+        <TextAndLevelFormat language="Kotlin" level="level" />
+        <TextAndLevelFormat language="Laravel" level="level" />
+        <TextAndLevelFormat language="Azure" level="level" />
+        <TextAndLevelFormat language="Git" level="level" />
       </div>
       <div>
-        <p>Soft skills</p>
+        <p class="text-xl"><i>Soft skills</i></p>
         <ul>
           <li>Teamwork</li>
           <li>Communication</li>
@@ -45,10 +61,11 @@ import IconTextAlign from "./IconTextAlign.astro";
         </ul>
       </div>
       <div>
-        <p>Languages</p>
-        <p><b>Kom (Dialect): </b> Native Language 1</p>
-        <p><b>English: </b> Native Language 2</p>
-        <p><b>French: </b>Proficient (C2 level)</p>
+        <p class="text-xl"><i>Languages</i></p>
+        <TextAndLevelFormat language="Kom (Dialect)" level="Native" />
+        <TextAndLevelFormat language="English" level="Native" />
+        <TextAndLevelFormat language="French" level="Proficient (C2)" />
+        <TextAndLevelFormat language="Dutch" level="Elementary (A2)" />
       </div>
     </div>
   </div>
