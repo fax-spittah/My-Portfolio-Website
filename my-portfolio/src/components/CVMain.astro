@@ -3,7 +3,7 @@ import CVItem from "./CVItem.astro";
 import IconTextAlign from "./IconTextAlign.astro";
 ---
 
-<div class="md:max-w-[70%] flex flex-col gap-4 pl-5 pr-5 pb-5">
+<div class="main-container md:max-w-[70%] flex flex-col gap-4 pl-5 pr-5 pb-5">
   <div class="h-[85%] flex flex-col gap-4">
     <div>
       <h2 class="text-xl font-bold">
@@ -88,6 +88,12 @@ import IconTextAlign from "./IconTextAlign.astro";
   @media print {
     .border-r-1 {
       border: 0px;
+    }
+
+    .main-container {
+      margin: 0;
+      width: 68%;
+      max-width: 68%;
     }
   }
 </style>

@@ -24,7 +24,13 @@ const {
     <div>
       <h3 class="font-bold text-lg">{name}</h3>
       {technologies && <div class="text-sm text-blue-700">{technologies}</div>}
-      {jobTitle && <p class="text-sm text-gray-600">{jobTitle}</p>}
+      {
+        jobTitle && (
+          <p class="text-base text-gray-600">
+            <i>{jobTitle}</i>
+          </p>
+        )
+      }
       {
         universityName && (
           <p class="text-sm text-gray-600">
