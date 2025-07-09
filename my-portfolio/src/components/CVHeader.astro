@@ -6,38 +6,47 @@ import placeholderProfileImage from "../assets/placeholder_profile_image.png";
   class="cv-header-container md:max-w-[100%] md:flex md:flex-row md:flex-between"
 >
   <div
-    class="cv-header-image md:w-[30%] md:max-w-[30%] border-r-1 border-black-100"
+    class="cv-header-image md:w-[30%] md:max-w-[30%] md:border-r-1 md:border-black-100"
   >
     <img
       src={placeholderProfileImage.src}
       alt="profile photo"
-      class="w-[10.5rem] mx-auto"
+      class="md:w-[10.5rem] w-[7.5rem] print:w-[9rem] sm: mx-auto"
     />
   </div>
   <div class="cv-header-profile md:max-w-[70%] p-5">
-    <h1 class="text-3xl font-bold">Edison Nyingchuo Kiseh</h1>
-    <p>Full Stack Developer</p>
+    <h1 class="text-xl sm:text-2xl md:text-3xl font-bold">
+      EDISON NYINGCHUO KISEH
+    </h1>
+    <p class="text-lg text-gray-600">Full Stack Developer</p>
     <p>
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia nostrum
-      explicabo laudantium! Ipsam iusto vero tempora molestias reiciendis
-      obcaecati dolorum quaerat eaque, quidem laudantium at eum, consequatur
-      fuga repellat tenetur.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+      laborum vero non sed ad repellat rem autem obcaecati ut doloremque dolorum
+      ducimus voluptatibus quasi, optio officiis possimus velit sunt rerum!
     </p>
   </div>
 </div>
 
 <style>
+  @media (max-width: 767px) {
+    .cv-header-image img {
+      float: left;
+      margin-right: 0.5rem;
+      margin-left: 1rem;
+    }
+  }
   @media print {
     .border-r-1 {
       border: 0px;
     }
 
     .cv-header-image {
-      margin: 0;
+      margin: auto;
+      max-width: 32%;
     }
 
     .cv-header-profile {
-      max-width: 77%;
+      max-width: 68%;
       margin: 0;
     }
 

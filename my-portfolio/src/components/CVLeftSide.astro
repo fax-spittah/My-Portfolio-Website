@@ -4,7 +4,7 @@ import TextAndLevelFormat from "./TextAndLevelFormat.astro";
 ---
 
 <div
-  class="flex flex-col gap-4 pl-5 pr-5 pb-5 border-r-1 border-black-100 md:w-[30%] md:max-w-[30%]"
+  class="left-side-container flex flex-col gap-4 pl-5 pr-5 pb-5 md:border-r-1 md:border-black-100 md:w-[30%] md:max-w-[30%]"
 >
   <div>
     <h2 class="text-xl font-bold">CONTACT</h2>
@@ -25,7 +25,7 @@ import TextAndLevelFormat from "./TextAndLevelFormat.astro";
     <hr />
     <div class="flex flex-col gap-2">
       <div>
-        <p class="text-xl"><i>Programming</i></p>
+        <p class="text-lg text-gray-600"><i>Programming</i></p>
         <TextAndLevelFormat language="C" level="level" />
         <TextAndLevelFormat language="C++" level="level" />
         <TextAndLevelFormat language="C#" level="level" />
@@ -45,7 +45,7 @@ import TextAndLevelFormat from "./TextAndLevelFormat.astro";
         <TextAndLevelFormat language="Git" level="level" />
       </div>
       <div>
-        <p class="text-xl"><i>Soft skills</i></p>
+        <p class="text-lg text-gray-600"><i>Soft skills</i></p>
         <ul>
           <li>Teamwork</li>
           <li>Communication</li>
@@ -54,7 +54,7 @@ import TextAndLevelFormat from "./TextAndLevelFormat.astro";
         </ul>
       </div>
       <div>
-        <p class="text-xl"><i>Languages</i></p>
+        <p class="text-lg text-gray-600"><i>Languages</i></p>
         <TextAndLevelFormat language="Kom (Dialect)" level="Native" />
         <TextAndLevelFormat language="English" level="Native" />
         <TextAndLevelFormat language="French" level="Proficient (C2)" />
@@ -68,6 +68,12 @@ import TextAndLevelFormat from "./TextAndLevelFormat.astro";
   @media print {
     .border-r-1 {
       border: 0px;
+    }
+
+    .left-side-container {
+      margin: 0;
+      width: 32%;
+      max-width: 32%;
     }
   }
 </style>
