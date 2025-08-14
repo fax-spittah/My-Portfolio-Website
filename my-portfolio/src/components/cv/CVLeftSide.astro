@@ -1,0 +1,90 @@
+---
+import IconTextAlign from "./IconTextAlign.astro";
+import TextAndLevelFormat from "./TextAndLevelFormat.astro";
+---
+
+<div
+  class="left-side-container flex flex-col gap-4 pl-5 pr-5 pb-5 md:border-r-1 md:border-black-100 md:w-[30%] md:max-w-[30%]"
+>
+  <div>
+    <h2 class="text-lg font-bold">CONTACT</h2>
+    <hr />
+    <IconTextAlign
+      iconName="home"
+      text="Vlaams Brabant, Belgium"
+      section="contact"
+    />
+    <IconTextAlign iconName="phone" text="+32465895065" section="contact" />
+    <IconTextAlign
+      iconName="email"
+      text="nyingchuokiseh@gmail.com"
+      section="contact"
+    />
+    <IconTextAlign iconName="world" text="Cameroonian" section="contact" />
+    <IconTextAlign iconName="linkedIn" text="@edison-kiseh" section="contact" />
+  </div>
+
+  <div>
+    <h2 class="text-lg font-bold">SKILLS</h2>
+    <hr />
+    <div class="flex flex-col gap-2">
+      <div>
+        <p class="text-base text-gray-600"><i>Programming Languages</i></p>
+        <TextAndLevelFormat language="C" level="Beginner" />
+        <TextAndLevelFormat language="C++" level="Intermediate" />
+        <TextAndLevelFormat language="C#" level="Advanced" />
+        <TextAndLevelFormat language="Python" level="Intermediate" />
+        <TextAndLevelFormat language="HTML/CSS" level="Advanced" />
+        <TextAndLevelFormat language="SQL" level="Advanced" />
+        <TextAndLevelFormat language="PHP" level="Beginner" />
+        <TextAndLevelFormat language="Kotlin" level="Beginner" />
+      </div>
+      <div>
+        <p class="text-base text-gray-600"><i>Frameworks & Libraries</i></p>
+        <TextAndLevelFormat language="React" level="Intermediate" />
+        <TextAndLevelFormat language="Angular" level="Advanced" />
+        <TextAndLevelFormat language="Ionic" level="Beginner" />
+        <TextAndLevelFormat language="Electron" level="Beginner" />
+        <TextAndLevelFormat language="Laravel" level="Beginner" />
+        <TextAndLevelFormat language=".NET" level="Advanced" />
+      </div>
+      <div>
+        <p class="text-base text-gray-600"><i>Tools & Platforms</i></p>
+        <TextAndLevelFormat language="Bash" level="Intermediate" />
+        <TextAndLevelFormat language="Powershell" level="Beginner" />
+        <TextAndLevelFormat language="Azure" level="Beginner" />
+        <TextAndLevelFormat language="Git" level="Intermediate" />
+      </div>
+      <div>
+        <p class="text-base text-gray-600"><i>Soft skills</i></p>
+        <ul class="text-sm">
+          <li>Teamwork</li>
+          <li>Communication</li>
+          <li>Problem-solving</li>
+          <li>Adaptability</li>
+        </ul>
+      </div>
+      <div>
+        <p class="text-base text-gray-600"><i>Languages</i></p>
+        <TextAndLevelFormat language="Kom (Dialect)" level="Native" />
+        <TextAndLevelFormat language="English" level="Native" />
+        <TextAndLevelFormat language="French" level="Proficient (C2)" />
+        <TextAndLevelFormat language="Dutch" level="Elementary (A2)" />
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  @media print {
+    .border-r-1 {
+      border: 0px;
+    }
+
+    .left-side-container {
+      margin: 0;
+      width: 35%;
+      max-width: 35%;
+    }
+  }
+</style>
