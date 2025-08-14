@@ -16,21 +16,21 @@ const { iconName, text, section }: Props = Astro.props;
       <>
         <>
           <Icon name={iconName} />
-          <span class="ml-[0.8rem]">{text}</span>
+          <span class="ml-[0.8rem] text-base">{text}</span>
         </>
       </>
     ) : section === "contact" ? (
       <>
         <>
           <Icon name={iconName} />
-          <span class="ml-[0.8rem]">{text}</span>
+          <span class="ml-[0.8rem] text-sm mt-[0.2rem]">{text}</span>
         </>
       </>
     ) : (
       <>
         <>
           <Icon name={iconName} class="text-gray-500" />
-          <span class="ml-[0.3rem]">{text}</span>
+          <span class="ml-[0.3rem] text-sm">{text}</span>
         </>
       </>
     )
