@@ -1,5 +1,26 @@
 # Changelog
 
+## [1.1.0](https://github.com/fax-spittah/My-Portfolio-Website/compare/v1.0.0...v1.1.0) (2025-08-14)
+
+
+### Features
+
+* add CV components and layout for improved presentation ([430be14](https://github.com/fax-spittah/My-Portfolio-Website/commit/430be142cdefbb1f50122c8254c81794396e8ad5))
+* implement CV layout with header, left side, and main sections ([d0084fb](https://github.com/fax-spittah/My-Portfolio-Website/commit/d0084fb5c8a0da671123f66d6ac44d22bd43539a))
+* implement CV layout with header, left side, and main sections ([e6facd9](https://github.com/fax-spittah/My-Portfolio-Website/commit/e6facd9c3638d5baa12cdc961fc94e7d1385ac6f))
+* polishing up cv ([18959e7](https://github.com/fax-spittah/My-Portfolio-Website/commit/18959e7f02e9f0cbb81f47859e5871d1a04defaa))
+* update CV components with new profile image and enhanced content ([3595e69](https://github.com/fax-spittah/My-Portfolio-Website/commit/3595e695de3df7345715e6d2385bc6595cab7d90))
+
+
+### Bug Fixes
+
+* adjust CV header styles for improved layout and alignment ([133ac41](https://github.com/fax-spittah/My-Portfolio-Website/commit/133ac41b3548ae9e109b15b89c70da7054c83170))
+* adjusting fonts and pdf style ([3d8b535](https://github.com/fax-spittah/My-Portfolio-Website/commit/3d8b535534d2ba7a46344598e241798fb614c1a8))
+* remove unnecessary margin classes and update CV description for clarity ([8a37a43](https://github.com/fax-spittah/My-Portfolio-Website/commit/8a37a4374b332b8ae3061084e9941296e7b2f466))
+* remove unnecessary margin classes for improved CV header layout ([72160e6](https://github.com/fax-spittah/My-Portfolio-Website/commit/72160e69561246bc08bdb1525f0b6332b7c6fe1c))
+* remove unnecessary margin classes for improved CV header layout ([98aef30](https://github.com/fax-spittah/My-Portfolio-Website/commit/98aef30c1895c96d0e736ea7bed5e68f849f75db))
+* update document title to reflect the correct name ([7fa5fc1](https://github.com/fax-spittah/My-Portfolio-Website/commit/7fa5fc13e7aecf11410d53574a534317d674ac4b))
+
 ## 1.0.0 (2025-07-07)
 
 
