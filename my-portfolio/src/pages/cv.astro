@@ -3,17 +3,22 @@ import CVHeader from "../components/cv/CVHeader.astro";
 import CVLeftSide from "../components/cv/CVLeftSide.astro";
 import CVMain from "../components/cv/CVMain.astro";
 import Layout from "../layouts/Layout.astro";
+import { Icon } from "astro-icon/components";
 ---
 
 <Layout>
   <title>Curriculum Vitae</title>
-  <button
-    class="btn btn-primary btn-sm absolute top-4 right-4 z-50"
-    onclick="window.print()">Print CV</button
-  >
 
+  <div class="flex justify-end w-full mb-2 print-hide mt-3 md:pr-3">
+    <Icon
+      name="printer"
+      onclick="window.print()"
+      class="w-5 h-5 md:w-7 md:h-7 cursor-pointer hover:text-gray-600 transition"
+      style="display: block;"
+    />
+  </div>
   <div
-    class="cv-container w-full max-w-4xl mx-auto my-10 border-1 border-black-100 mb-[1rem] shadow-xl"
+    class="cv-container w-full max-w-4xl mx-auto border-1 border-black-100 mb-[1rem] shadow-xl"
   >
     <CVHeader />
     <div class="cv-body md:flex md:flex-row md:justify-between">
@@ -24,8 +29,9 @@ import Layout from "../layouts/Layout.astro";
 
   <style>
     @media print {
-      .btn {
-        display: none;
+      .btn,
+      .print-hide {
+        display: none !important;
       }
 
       .cv-container {
