@@ -3,12 +3,18 @@ import { Icon } from "astro-icon/components";
 ---
 
 <div
-  class="header-container flex justify-between items-center pt-4 pb-4 pl-8 pr-8 border-bottom-1 border-black-100 shadow-md print-hide"
+  class="header-container fixed top-0 right-0 left-0 z-50 flex justify-between items-center mb-4 pt-4 pb-4 pl-8 pr-8 border-bottom-1 border-black-100 shadow-md print-hide"
 >
+  <!-- <div>
+    <Icon name="burgermenu" class="w-8 h-8 border-1 p-1 visible md:invisible" />
+  </div> -->
+
   <div>
     <p class="text-xl">Edison Nyingchuo Kiseh</p>
   </div>
-  <div class="nav-links space-x-5 flex justify-between items-center">
+  <div
+    class="nav-links space-x-5 flex justify-between items-center invisible md:visible"
+  >
     <a href="/home">Home</a>
     <a href="/about">About</a>
     <a href="/cv">CV</a>
