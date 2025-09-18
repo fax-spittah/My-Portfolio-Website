@@ -5,9 +5,10 @@ interface Props {
   iconName: string;
   text: string;
   section?: string;
+  link?: string;
 }
 
-const { iconName, text, section }: Props = Astro.props;
+const { iconName, text, section, link }: Props = Astro.props;
 ---
 
 <p class="flex items-center">
@@ -23,7 +24,11 @@ const { iconName, text, section }: Props = Astro.props;
       <>
         <>
           <Icon name={iconName} />
-          <span class="ml-[0.8rem] text-sm mt-[0.2rem]">{text}</span>
+          <span class="ml-[0.8rem] text-sm mt-[0.2rem]">
+            <a href={link} target="_blank">
+              {text}
+            </a>
+          </span>
         </>
       </>
     ) : (
