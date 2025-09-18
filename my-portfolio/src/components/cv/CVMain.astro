@@ -36,35 +36,29 @@ import IconTextAlign from "./IconTextAlign.astro";
       <hr />
       <div class="mb-4">
         <CVItem
-          name="Brico Kraainem"
-          date="7 Jul - 27 Jul 2025"
-          jobTitle="Student Cashier"
-          description="Worked as a cashier, assisting customers with purchases and handling transactions."
-        />
-        <CVItem
           name="Avanade"
           date="Feb 2025 - Jun 2025"
           jobTitle="Full Stack Developer Intern"
-          description="Avanade is a Microsoft and Accenture joint venture specializing in Microsoft-based solutions. As a Full Stack Developer Intern, I contributed to a web-based chat solution enabling real-time support between users and agents, integrated with third-party applications."
+          description={[
+            "Developed a real-time support chat platform with React & Next.js for the frontend, and C# .NET for the backend, hosted on Azure.",
+            "Integrated Azure Communication Services to enable duplex messaging and multi-agent support.",
+            "Collaborated in Agile teams, improving sprint delivery efficiency.",
+          ]}
         />
-        <CVItem
-          name="Walibi Belgium"
-          date="Jun 2023 - Aug 2023"
-          jobTitle="Student Chef"
-          description="Worked as a chef in a fast food restaurant, preparing and serving food to customers."
-        />
-        <CVItem
-          name="Delhaize Kraainem"
-          date="Jan 2021"
-          jobTitle="Shelf Stocker"
-          description="Was responsible for stocking shelves, ensuring products were displayed correctly and inventory was maintained."
-        />
-        <CVItem
-          name="Oxfam Belgium"
-          date="Jan 2019"
-          jobTitle="Volunteer sales person"
-          description="Volunteered as a salesperson at my school, assisting with sales and customer service."
-        />
+
+        <p class="text-lg font-bold">Other Work Experience</p>
+        <p class="text-sm text-gray-600">
+          <i>Student Jobs</i>
+        </p>
+
+        <ul class="list-disc ml-5 text-sm">
+          <li>
+            Worked in customer-facing student jobs at Brico, Walibi, Delhaize,
+            and Oxfam.
+          </li>
+          <li>Developed strong teamwork and collaboration skills.</li>
+          <li>Improved communication and customer service abilities.</li>
+        </ul>
       </div>
       <div>
         <h2 class="text-lg font-bold mb-[0.2rem]">
@@ -77,7 +71,7 @@ import IconTextAlign from "./IconTextAlign.astro";
           name="Avanade Support Hub"
           date="Feb 2025 - Jun 2025"
           technologies="React, Next.js, C# .NET, Azure Communication Services"
-          description="A customizable chat solution connecting users with support agents in real-time. Features include secure two-way (duplex) messaging, WebSocket-based real-time updates, and multi-agent management."
+          description="Developed a real-time chat platform connecting users with support agents, featuring secure duplex messaging, WebSocket-based updates, multi-agent management, and seamless integration with third-party websites."
         />
       </div>
     </div>
