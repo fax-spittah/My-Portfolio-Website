@@ -22,18 +22,18 @@ const {
 <div class="mb-[0.5rem] text-sm">
   <div class="flex flex-col md:flex-row md:justify-between md:items-center">
     <div>
-      <h3 class="font-bold text-lg">{name}</h3>
+      <h3 class="font-semibold text-lg">{name}</h3>
       {technologies && <div class="text-xs text-blue-700">{technologies}</div>}
       {
         jobTitle && (
-          <p class="text-sm text-gray-600">
+          <p class="text-sm text-gray-700">
             <i>{jobTitle}</i>
           </p>
         )
       }
       {
         universityName && (
-          <p class="text-xs text-gray-600">
+          <p class="text-xs text-gray-700">
             <IconTextAlign iconName="location" text={universityName} />
           </p>
         )

@@ -4,7 +4,7 @@ import TextAndLevelFormat from "./TextAndLevelFormat.astro";
 ---
 
 <div
-  class="left-side-container flex flex-col gap-4 pl-5 pr-5 pb-5 md:border-r-1 md:border-black-100 md:w-[30%] md:max-w-[30%]"
+  class="left-side-container flex flex-col gap-4 p-5 md:border-r-1 md:border-black-100 md:w-[30%] md:max-w-[30%]"
 >
   <div>
     <h2 class="text-lg font-bold">CONTACT</h2>
@@ -35,7 +35,7 @@ import TextAndLevelFormat from "./TextAndLevelFormat.astro";
     <hr />
     <div class="flex flex-col gap-2">
       <div>
-        <p class="text-base text-gray-600"><i>Programming Languages</i></p>
+        <p class="text-base text-gray-700"><i>Programming Languages</i></p>
         <TextAndLevelFormat language="C" level="Beginner" />
         <TextAndLevelFormat language="C++" level="Intermediate" />
         <TextAndLevelFormat language="C#" level="Advanced" />
@@ -46,7 +46,7 @@ import TextAndLevelFormat from "./TextAndLevelFormat.astro";
         <TextAndLevelFormat language="Javascript" level="Intermediate" />
       </div>
       <div>
-        <p class="text-base text-gray-600"><i>Frameworks & Libraries</i></p>
+        <p class="text-base text-gray-700"><i>Frameworks & Libraries</i></p>
         <TextAndLevelFormat language="React" level="Intermediate" />
         <TextAndLevelFormat language="Angular" level="Advanced" />
         <TextAndLevelFormat language="Laravel" level="Beginner" />
@@ -55,18 +55,18 @@ import TextAndLevelFormat from "./TextAndLevelFormat.astro";
         <TextAndLevelFormat language="Electron" level="Beginner" />
       </div>
       <div>
-        <p class="text-base text-gray-600"><i>Tools</i></p>
+        <p class="text-base text-gray-700"><i>Tools</i></p>
         <TextAndLevelFormat language="Git" level="Intermediate" />
         <TextAndLevelFormat language="Docker" level="Beginner" />
       </div>
       <div>
-        <p class="text-base text-gray-600"><i>Soft skills</i></p>
+        <p class="text-base text-gray-700"><i>Soft skills</i></p>
         <p class="text-sm">
           Teamwork, Communication, Problem-solving, Adaptability, Cool-headed
         </p>
       </div>
       <div>
-        <p class="text-base text-gray-600"><i>Languages</i></p>
+        <p class="text-base text-gray-700"><i>Languages</i></p>
         <TextAndLevelFormat language="Kom (Dialect)" level="Native" />
         <TextAndLevelFormat language="English" level="Native" />
         <TextAndLevelFormat language="French" level="Proficient (C2)" />
@@ -85,6 +85,7 @@ import TextAndLevelFormat from "./TextAndLevelFormat.astro";
     .left-side-container {
       margin: 0;
       width: 35%;
+      padding-top: 0;
       max-width: 35%;
     }
   }

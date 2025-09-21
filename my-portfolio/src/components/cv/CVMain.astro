@@ -3,16 +3,11 @@ import CVItem from "./CVItem.astro";
 import IconTextAlign from "./IconTextAlign.astro";
 ---
 
-<div class="main-container md:max-w-[70%] flex flex-col gap-4 pl-5 pr-5 pb-5">
+<div class="main-container md:max-w-[70%] flex flex-col gap-4 p-5">
   <div class="h-[85%] flex flex-col gap-4">
     <div>
-      <h2 class="text-lg font-bold">
-        <IconTextAlign
-          iconName="graduate-cap"
-          text="EDUCATION"
-          section="title"
-        />
-      </h2>
+      <IconTextAlign iconName="graduate-cap" text="EDUCATION" section="title" />
+
       <hr />
       <CVItem
         name="Bachelor's in Electronics-ICT - Major ICT"
@@ -26,13 +21,12 @@ import IconTextAlign from "./IconTextAlign.astro";
     </div>
 
     <div>
-      <h2 class="text-lg font-bold">
-        <IconTextAlign
-          iconName="work-case"
-          text="PROFESSIONAL EXPERIENCE"
-          section="title"
-        />
-      </h2>
+      <IconTextAlign
+        iconName="work-case"
+        text="PROFESSIONAL EXPERIENCE"
+        section="title"
+      />
+
       <hr />
       <div class="mb-4">
         <CVItem
@@ -46,8 +40,8 @@ import IconTextAlign from "./IconTextAlign.astro";
           ]}
         />
 
-        <p class="text-lg font-bold">Other Work Experience</p>
-        <p class="text-sm text-gray-600">
+        <p class="text-lg font-semibold">Other Work Experience</p>
+        <p class="text-sm text-gray-700">
           <i>Student Jobs</i>
         </p>
 
@@ -61,9 +55,7 @@ import IconTextAlign from "./IconTextAlign.astro";
         </ul>
       </div>
       <div>
-        <h2 class="text-lg font-bold mb-[0.2rem]">
-          <IconTextAlign iconName="tool" text="PROJECTS" section="title" />
-        </h2>
+        <IconTextAlign iconName="tool" text="PROJECTS" section="title" />
         <hr />
       </div>
       <div class="flex flex-col gap-4">
@@ -86,6 +78,7 @@ import IconTextAlign from "./IconTextAlign.astro";
 
     .main-container {
       margin: 0;
+      padding-top: 0;
       width: 65%;
       max-width: 65%;
     }
