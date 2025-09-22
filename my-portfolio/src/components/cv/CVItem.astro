@@ -19,10 +19,10 @@ const {
 }: Props = Astro.props;
 ---
 
-<div class="mb-[0.5rem] text-sm">
+<div class="mb-[0.5rem]">
   <div class="flex flex-col md:flex-row md:justify-between md:items-center">
     <div>
-      <h3 class="font-semibold text-lg">{name}</h3>
+      <p class="title font-semibold md:text-lg sm:text-base">{name}</p>
       {technologies && <div class="text-xs text-blue-700">{technologies}</div>}
       {
         jobTitle && (
@@ -51,7 +51,7 @@ const {
         ))}
       </ul>
     ) : (
-      <p>{description}</p>
+      <p class="text-sm">{description}</p>
     )
   }
 </div>
