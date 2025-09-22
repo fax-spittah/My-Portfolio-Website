@@ -16,14 +16,16 @@ const { iconName, text, section, link }: Props = Astro.props;
     section === "title" ? (
       <>
         <>
-          <Icon name={iconName} />
-          <span class="ml-[0.8rem] text-base">{text}</span>
+          <Icon name={iconName} class="w-5 h-5 md:w-6 md:h-6 mb-[0.2rem]" />
+          <span class="ml-[0.8rem] md:text-lg sm:text-base font-bold mb-[0.3rem]">
+            {text}
+          </span>
         </>
       </>
     ) : section === "contact" ? (
       <>
         <>
-          <Icon name={iconName} />
+          <Icon name={iconName} class="text-[#262626] dark:text-[#d9d9d9]" />
           <span class="ml-[0.8rem] text-sm mt-[0.2rem]">
             <a href={link} target="_blank">
               {text}
