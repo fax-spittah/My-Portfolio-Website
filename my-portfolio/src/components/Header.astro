@@ -3,21 +3,34 @@ import { Icon } from "astro-icon/components";
 ---
 
 <div
-  class="header-container fixed top-0 right-0 left-0 z-50 flex justify-between items-center mb-4 pt-4 pb-4 pl-8 pr-8 border-bottom-1 border-black-100 shadow-md print-hide"
+  class="header-container fixed top-0 left-0 right-0 z-50 pt-4 pb-4 pl-8 pr-8 border-bottom-1 border-black-100 shadow-md print-hide bg-white"
 >
-  <!-- <div>
-    <Icon name="burgermenu" class="w-8 h-8 border-1 p-1 visible md:invisible" />
-  </div> -->
-
-  <div>
-    <p class="text-xl">Edison Nyingchuo Kiseh</p>
-  </div>
-  <div
-    class="nav-links space-x-5 flex justify-between items-center invisible md:visible"
-  >
-    <a href="/home">Home</a>
-    <a href="/about">About</a>
-    <a href="/cv">CV</a>
-    <Icon name="sun" class="w-8 h-8 border-1 p-1" />
+  <div class="flex justify-between items-center w-full">
+    <div class="flex items-center">
+      <span class="mr-2 md:hidden">
+        <Icon name="burgermenu" class="w-8 h-8 border-1 p-1" />
+      </span>
+      <p class="text-lg md:text-xl">Edison Nyingchuo Kiseh</p>
+    </div>
+    <div
+      class="nav-links space-x-5 flex justify-between items-center hidden md:flex"
+    >
+      <a href="/home">Home</a>
+      <a href="/about">About</a>
+      <a href="/cv">CV</a>
+      <button
+        class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center"
+      >
+        <Icon name="sun" class="w-5 h-5" />
+      </button>
+    </div>
   </div>
 </div>
+
+<style>
+  @media print {
+    .header-container {
+      display: none;
+    }
+  }
+</style>
