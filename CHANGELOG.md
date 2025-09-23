@@ -1,5 +1,34 @@
 # Changelog
 
+## [1.2.0](https://github.com/fax-spittah/My-Portfolio-Website/compare/v1.1.0...v1.2.0) (2025-09-23)
+
+
+### Features
+
+* add header component to CV page ([347c480](https://github.com/fax-spittah/My-Portfolio-Website/commit/347c48025beb6ce7a071086b3568104849b1640c))
+* adding a dummy division to create space below the cv ([e129cec](https://github.com/fax-spittah/My-Portfolio-Website/commit/e129cec2ed42012dca218b3f7ac9e2e5ec7f1c83))
+* adding navigation ([9cfca77](https://github.com/fax-spittah/My-Portfolio-Website/commit/9cfca776178773e8f538778ffaef4ce2d67a0147))
+* enhance CV page with printer icon and improved print functionality ([3a1eb3c](https://github.com/fax-spittah/My-Portfolio-Website/commit/3a1eb3cf2b5ca2539875bf0d2ca178f965c09799))
+* styling the cv ([6de1c80](https://github.com/fax-spittah/My-Portfolio-Website/commit/6de1c8060455a3fc0419a980d30b56539a861cc6))
+* update header component and add sun icon to CV page ([d80641a](https://github.com/fax-spittah/My-Portfolio-Website/commit/d80641a0f788e6d4ee29f5bda9d81d5fe36f46e1))
+
+
+### Bug Fixes
+
+* adding real links to the contact section of the application ([c9bb364](https://github.com/fax-spittah/My-Portfolio-Website/commit/c9bb364645f897f919d1114fbadd2a17f8d95fbd))
+* adjust font style in header and spacing in CV layout ([6d2c12c](https://github.com/fax-spittah/My-Portfolio-Website/commit/6d2c12c2354107679537dad0c1b168a8c38b8c43))
+* arranging cv page ([095b0cb](https://github.com/fax-spittah/My-Portfolio-Website/commit/095b0cbadc4e735d48edbf7afe39fa5149bdf5cc))
+* arranging the navigation ([316fea2](https://github.com/fax-spittah/My-Portfolio-Website/commit/316fea2273db1292abc0158c5d07db8450e8e248))
+* fixing print issue ([3c06eb9](https://github.com/fax-spittah/My-Portfolio-Website/commit/3c06eb9dfc4e42964110a1a60bdeda71b16cb211))
+* fixing some issues ([97a99c9](https://github.com/fax-spittah/My-Portfolio-Website/commit/97a99c9e8aec6dec407935fe3987be2f15fc76e9))
+* making some minor changes to the cv ([02084fc](https://github.com/fax-spittah/My-Portfolio-Website/commit/02084fcc59e1e64d963c1e19900c4b08c98c0e73))
+* removing image from cv ([da6bb57](https://github.com/fax-spittah/My-Portfolio-Website/commit/da6bb574b3437b079fc11d3d81b79fac680652eb))
+* removing the unused images ([2272f71](https://github.com/fax-spittah/My-Portfolio-Website/commit/2272f71a5e77d2e186b3f38febc6141034c966b0))
+* reordering my professional experiences ([2e128a6](https://github.com/fax-spittah/My-Portfolio-Website/commit/2e128a676d63d10f6b1a4d9b517981e44e66ac32))
+* styling the header ([cf9438f](https://github.com/fax-spittah/My-Portfolio-Website/commit/cf9438f1bd640f9386cd5e62aa101f70ffdc40be))
+* update skill levels and reformat soft skills section ([9ebc094](https://github.com/fax-spittah/My-Portfolio-Website/commit/9ebc0947bb95c2a8d739b7a23a6e4a21d8bbe3d0))
+* update styles and improve text formatting in CV components ([e57ce29](https://github.com/fax-spittah/My-Portfolio-Website/commit/e57ce29e1245aa12bb09af01cd837ae5eef7d0d5))
+
 ## [1.1.0](https://github.com/fax-spittah/My-Portfolio-Website/compare/v1.0.0...v1.1.0) (2025-08-14)
 
 
