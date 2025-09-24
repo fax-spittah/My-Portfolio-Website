@@ -1,5 +1,6 @@
 ---
 import { Icon } from "astro-icon/components";
+import HamburgerMenu from "./HamburgerMenu.astro";
 ---
 
 <div
@@ -7,10 +8,12 @@ import { Icon } from "astro-icon/components";
 >
   <div class="flex justify-between items-center w-full">
     <div class="flex items-center">
-      <span class="mr-2 md:hidden">
+      <span class="mr-2 md:hidden" id="menu-icon">
         <Icon name="burgermenu" class="w-8 h-8 border-1 p-1" />
       </span>
-      <p class="text-lg md:text-xl font-serif">Edison Nyingchuo Kiseh</p>
+      <p class="text-lg md:text-xl font-serif">
+        <a href="/home">Edison Nyingchuo Kiseh</a>
+      </p>
     </div>
     <div
       class="nav-links space-x-5 flex justify-between items-center hidden md:flex"
@@ -24,6 +27,25 @@ import { Icon } from "astro-icon/components";
         <Icon name="sun" class="w-5 h-5" />
       </button>
     </div>
+  </div>
+
+  <script>
+    const menuIcon = document.getElementById("menu-icon");
+    const hamburgerMenu = document.getElementById("hamburger-menu");
+
+    if (menuIcon && hamburgerMenu) {
+      menuIcon.addEventListener("click", () => {
+        if (hamburgerMenu.classList.contains("hidden")) {
+          hamburgerMenu.classList.remove("hidden");
+        } else {
+          hamburgerMenu.classList.add("hidden");
+        }
+      });
+    }
+  </script>
+
+  <div class="hidden" id="hamburger-menu">
+    <HamburgerMenu />
   </div>
 </div>
 
