@@ -29,22 +29,9 @@ import HamburgerMenu from "./HamburgerMenu.astro";
     </div>
   </div>
 
-  <script>
-    const menuIcon = document.getElementById("menu-icon");
-    const hamburgerMenu = document.getElementById("hamburger-menu");
+  <script src="../scripts/toggleMenu.js"></script>
 
-    if (menuIcon && hamburgerMenu) {
-      menuIcon.addEventListener("click", () => {
-        if (hamburgerMenu.classList.contains("hidden")) {
-          hamburgerMenu.classList.remove("hidden");
-        } else {
-          hamburgerMenu.classList.add("hidden");
-        }
-      });
-    }
-  </script>
-
-  <div class="hidden" id="hamburger-menu">
+  <div class="hidden md:hidden" id="hamburger-menu">
     <HamburgerMenu />
   </div>
 </div>
