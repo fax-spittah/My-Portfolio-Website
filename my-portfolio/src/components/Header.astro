@@ -9,8 +9,9 @@ import HamburgerMenu from "./HamburgerMenu.astro";
 >
   <div class="flex justify-between items-center w-full">
     <div class="flex items-center justify-between w-full">
-      <p class="text-xl">
-        <a href="/home">Edison Nyingchuo Kiseh</a>
+      <p class="text-2xl">
+        <a href="/home" class="hidden md:block"> Edison Nyingchuo Kiseh </a>
+        <a href="/home" class="md:hidden"> Edison Kiseh </a>
       </p>
 
       <span class="md:hidden" @click="open = !open">
