@@ -4,19 +4,22 @@ import HamburgerMenu from "./HamburgerMenu.astro";
 ---
 
 <div
-  class="header-container fixed top-0 left-0 right-0 z-50 pt-4 pb-4 pl-8 pr-8 border-bottom-1 border-black-100 shadow-md print-hide bg-white"
+  x-data="{ open: false }"
+  class="header-container fixed top-0 left-0 right-0 z-50 pt-4 pb-4 pl-4 pr-4 border-bottom-1 border-black-100 shadow-md print-hide bg-white"
 >
   <div class="flex justify-between items-center w-full">
-    <div class="flex items-center">
-      <span class="mr-2 md:hidden" id="menu-icon">
-        <Icon name="burgermenu" class="w-8 h-8 border-1 p-1" />
-      </span>
-      <p class="text-lg md:text-xl font-serif">
+    <div class="flex items-center justify-between w-full">
+      <p class="text-xl">
         <a href="/home">Edison Nyingchuo Kiseh</a>
       </p>
+
+      <span class="md:hidden" @click="open = !open">
+        <Icon x-show="!open" name="burgermenu" class="w-8 h-8 text-gray-600" />
+        <Icon x-show="open" name="closeicon" class="w-8 h-8 text-gray-600" />
+      </span>
     </div>
     <div
-      class="nav-links space-x-5 flex justify-between items-center hidden md:flex"
+      class="nav-links space-x-8 flex justify-between items-center hidden md:flex"
     >
       <a href="/home">Home</a>
       <a href="/about">About</a>
@@ -29,9 +32,7 @@ import HamburgerMenu from "./HamburgerMenu.astro";
     </div>
   </div>
 
-  <script src="../scripts/toggleMenu.js"></script>
-
-  <div class="hidden md:hidden" id="hamburger-menu">
+  <div x-show="open" class="md:hidden">
     <HamburgerMenu />
   </div>
 </div>
