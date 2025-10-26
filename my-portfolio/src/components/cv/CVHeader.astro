@@ -1,16 +1,17 @@
+---
+import cvHeader from "../../data/cv.json";
+---
+
 <div
   class="cv-header-container md:max-w-[100%] md:flex md:flex-row md:flex-between border-b-1 border-black-100 bg-[#403d39] text-white print:bg-white print:text-black"
 >
   <div class="cv-header-profile md:max-w-[100%] p-5">
     <h1 class="text-xl sm:text-2xl md:text-3xl font-bold text-center mb-4">
-      EDISON NYINGCHUO KISEH
+      {cvHeader.cvHeader.fullNameAllCaps}
     </h1>
-    <p class="md:text-xl sm:text-lg font-semibold">Full Stack Developer</p>
+    <p class="md:text-xl sm:text-lg font-semibold">{cvHeader.cvHeader.title}</p>
     <p class="text-sm">
-      Passionate full stack developer with experience building modern web
-      applications using JavaScript, TypeScript, Angular, React, and Node.js.
-      Dedicated to writing clean, efficient code and continuously learning new
-      technologies.
+      {cvHeader.cvHeader.shortDescription}
     </p>
   </div>
 </div>
