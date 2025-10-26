@@ -1,6 +1,10 @@
 ---
 import { Icon } from "astro-icon/components";
 import HamburgerMenu from "./HamburgerMenu.astro";
+import data from "../data/general.json";
+
+const fullName = data.fullName;
+const shortName = data.shortName;
 ---
 
 <div
@@ -10,8 +14,8 @@ import HamburgerMenu from "./HamburgerMenu.astro";
   <div class="flex justify-between items-center w-full">
     <div class="flex items-center justify-between w-full">
       <p class="text-2xl">
-        <a href="/home" class="hidden md:block"> Edison Nyingchuo Kiseh </a>
-        <a href="/home" class="md:hidden"> Edison Kiseh </a>
+        <a href="/home" class="hidden md:block"> {fullName} </a>
+        <a href="/home" class="md:hidden"> {shortName} </a>
       </p>
 
       <span class="md:hidden" @click="open = !open">

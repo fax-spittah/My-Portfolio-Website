@@ -1,0 +1,109 @@
+{
+  "cvHeader": {
+    "fullNameAllCaps": "EDISON NYINGCHUO KISEH",
+    "title": "Full Stack Developer",
+    "shortDescription": "Passionate full stack developer with experience building modern web applications using JavaScript, TypeScript, Angular, React, and Node.js. Dedicated to writing clean, efficient code and continuously learning new technologies."
+  },
+
+  "cvLeftSide": {
+    "contactInformation": {
+      "email": "nyingchuokiseh@gmail.com",
+      "phone": "+32465895065",
+      "location": "Vlaams Brabant, Belgium",
+      "nationality": "Cameroonian",
+      "linkedIn": "@edison-kiseh",
+      "linkedInUrl": "https://www.linkedin.com/in/edison-kiseh-392731271/"
+    },
+
+    "skills": {
+      "programmingLanguages": [
+        { "name": "C", "proficiency": "Beginner" },
+        { "name": "C++", "proficiency": "Intermediate" },
+        { "name": "C#", "proficiency": "Advanced" },
+        { "name": "Python", "proficiency": "Intermediate" },
+        { "name": "HTML/CSS", "proficiency": "Advanced" },
+        { "name": "SQL", "proficiency": "Advanced" },
+        { "name": "PHP", "proficiency": "Intermediate" },
+        { "name": "JavaScript", "proficiency": "Intermediate" }
+      ],
+
+      "frameworksAndLibraries": [
+        { "name": "React", "proficiency": "Intermediate" },
+        { "name": "Angular", "proficiency": "Advanced" },
+        { "name": "Laravel", "proficiency": "Beginner" },
+        { "name": ".NET", "proficiency": "Advanced" },
+        { "name": "Ionic", "proficiency": "Beginner" },
+        { "name": "Electron", "proficiency": "Beginner" }
+      ],
+
+      "toolsAndPlatforms": [
+        { "name": "Git", "proficiency": "Intermediate" },
+        { "name": "GitHub", "proficiency": "Intermediate" },
+        { "name": "Docker", "proficiency": "Beginner" },
+        { "name": "Azure", "proficiency": "Beginner" },
+        { "name": "Linux", "proficiency": "Intermediate" }
+      ],
+
+      "softSkills": [
+        "Teamwork",
+        "Good Communication",
+        "Problem-solving",
+        "Adaptability",
+        "Cool-headed"
+      ],
+
+      "spokenLanguages": [
+        { "name": "Kom (Dialect)", "proficiency": "Native" },
+        { "name": "English", "proficiency": "Native" },
+        { "name": "French", "proficiency": "Proficient (C2)" },
+        { "name": "Dutch", "proficiency": "Elementary (A2)" }
+      ]
+    }
+  },
+
+  "cvMainSide": {
+    "education": {
+      "name": "Bachelor's in Electronics-ICT - Major ICT",
+      "date": "2022 - 2025",
+      "universityName": "Thomas More University of Applied Sciences",
+      "description": [
+        "Graduated with a final average of 76.50%.",
+        "Honors: Received the Willy Asselman award for the best bachelor thesis of Electronics-ICT."
+      ]
+    },
+
+    "professionalExperience": [
+      {
+        "jobTitle": "Full Stack Developer Intern",
+        "companyName": "Avanade",
+        "date": "Feb 2025 - Jun 2025",
+        "responsibilities": [
+          "Developed a real-time support chat platform with React & Next.js for the frontend, and C# .NET for the backend, hosted on Azure.",
+          "Integrated Azure Communication Services to enable duplex messaging and multi-agent support.",
+          "Collaborated in Agile teams, improving sprint delivery efficiency."
+        ]
+      }
+    ],
+
+    "otherExperience": [
+      "Worked in customer-facing student jobs at Brico, Walibi, Delhaize, and Oxfam.",
+      "Developed strong teamwork and collaboration skills.",
+      "Improved communication and customer service abilities."
+    ],
+
+    "projects": [
+      {
+        "projectName": "Avanade Support Hub",
+        "date": "Feb 2025 - Jun 2025",
+        "description": "Developed a real-time chat platform connecting users with support agents, featuring secure duplex messaging, WebSocket-based updates, multi-agent management, and seamless integration with third-party websites.",
+        "technologies": "React, Next.js, TypeScript, C# .NET, Azure Communication Services"
+      },
+      {
+        "projectName": "Note Application",
+        "date": "2024",
+        "description": "Developed a note-taking application as a school project similar to Microsoft's OneNote app, with Angular and Firebase. It features user authentication, real-time data synchronization, and CRUD operations for notes. ",
+        "technologies": "Angular, TypeScript, Firebase"
+      }
+    ]
+  }
+}
