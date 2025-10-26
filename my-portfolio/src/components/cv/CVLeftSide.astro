@@ -1,6 +1,19 @@
 ---
 import IconTextAlign from "./IconTextAlign.astro";
 import TextAndLevelFormat from "./TextAndLevelFormat.astro";
+import cvData from "../../data/cv.json";
+
+const location = cvData.cvLeftSide.contactInformation.location;
+const phone = cvData.cvLeftSide.contactInformation.phone;
+const email = cvData.cvLeftSide.contactInformation.email;
+const linkedIn = cvData.cvLeftSide.contactInformation.linkedIn;
+const linkedInURL = cvData.cvLeftSide.contactInformation.linkedInUrl;
+const nationality = cvData.cvLeftSide.contactInformation.nationality;
+const programmingLanguages = cvData.cvLeftSide.skills.programmingLanguages;
+const frameworksAndLibraries = cvData.cvLeftSide.skills.frameworksAndLibraries;
+const toolsAndPlatforms = cvData.cvLeftSide.skills.toolsAndPlatforms;
+const softSkills = cvData.cvLeftSide.skills.softSkills;
+const spokenLanguages = cvData.cvLeftSide.skills.spokenLanguages;
 ---
 
 <div
@@ -9,24 +22,20 @@ import TextAndLevelFormat from "./TextAndLevelFormat.astro";
   <div>
     <h2 class="md:text-lg sm:text-base font-bold">CONTACT</h2>
     <hr />
-    <IconTextAlign
-      iconName="home"
-      text="Vlaams Brabant, Belgium"
-      section="contact"
-    />
-    <IconTextAlign iconName="phone" text="+32465895065" section="contact" />
+    <IconTextAlign iconName="home" text={location} section="contact" />
+    <IconTextAlign iconName="phone" text={phone} section="contact" />
     <IconTextAlign
       iconName="email"
-      text="nyingchuokiseh@gmail.com"
+      text={email}
       section="contact"
-      link="mailto:nyingchuokiseh@gmail.com"
+      link={`mailto:${email}`}
     />
-    <IconTextAlign iconName="world" text="Cameroonian" section="contact" />
+    <IconTextAlign iconName="world" text={nationality} section="contact" />
     <IconTextAlign
       iconName="linkedIn"
-      text="@edison-kiseh"
+      text={linkedIn}
       section="contact"
-      link="https://www.linkedin.com/in/edison-kiseh-392731271/"
+      link={linkedInURL}
     />
   </div>
 
@@ -38,43 +47,52 @@ import TextAndLevelFormat from "./TextAndLevelFormat.astro";
         <p class="md:text-base sm:text-sm text-gray-800">
           <i>Programming Languages</i>
         </p>
-        <TextAndLevelFormat language="C" level="Beginner" />
-        <TextAndLevelFormat language="C++" level="Intermediate" />
-        <TextAndLevelFormat language="C#" level="Advanced" />
-        <TextAndLevelFormat language="Python" level="Intermediate" />
-        <TextAndLevelFormat language="HTML/CSS" level="Advanced" />
-        <TextAndLevelFormat language="SQL" level="Advanced" />
-        <TextAndLevelFormat language="PHP" level="Intermediate" />
-        <TextAndLevelFormat language="Javascript" level="Intermediate" />
+        {
+          programmingLanguages?.map((language) => (
+            <TextAndLevelFormat
+              language={language.name}
+              level={language.proficiency}
+            />
+          ))
+        }
       </div>
       <div>
         <p class="md:text-base sm:text-sm text-gray-800">
           <i>Frameworks & Libraries</i>
         </p>
-        <TextAndLevelFormat language="React" level="Intermediate" />
-        <TextAndLevelFormat language="Angular" level="Advanced" />
-        <TextAndLevelFormat language="Laravel" level="Beginner" />
-        <TextAndLevelFormat language=".NET" level="Advanced" />
-        <TextAndLevelFormat language="Ionic" level="Beginner" />
-        <TextAndLevelFormat language="Electron" level="Beginner" />
+        {
+          frameworksAndLibraries?.map((framework) => (
+            <TextAndLevelFormat
+              language={framework.name}
+              level={framework.proficiency}
+            />
+          ))
+        }
       </div>
       <div>
         <p class="md:text-base sm:text-sm text-gray-800"><i>Tools</i></p>
-        <TextAndLevelFormat language="Git" level="Intermediate" />
-        <TextAndLevelFormat language="Docker" level="Beginner" />
+        {
+          toolsAndPlatforms?.map((tool) => (
+            <TextAndLevelFormat language={tool.name} level={tool.proficiency} />
+          ))
+        }
       </div>
       <div>
         <p class="md:text-base sm:text-sm text-gray-800"><i>Soft skills</i></p>
         <p class="text-sm">
-          Teamwork, Communication, Problem-solving, Adaptability, Cool-headed
+          {softSkills.join(", ")}
         </p>
       </div>
       <div>
         <p class="md:text-base sm:text-sm text-gray-800"><i>Languages</i></p>
-        <TextAndLevelFormat language="Kom (Dialect)" level="Native" />
-        <TextAndLevelFormat language="English" level="Native" />
-        <TextAndLevelFormat language="French" level="Proficient (C2)" />
-        <TextAndLevelFormat language="Dutch" level="Elementary (A2)" />
+        {
+          spokenLanguages?.map((language) => (
+            <TextAndLevelFormat
+              language={language.name}
+              level={language.proficiency}
+            />
+          ))
+        }
       </div>
     </div>
   </div>

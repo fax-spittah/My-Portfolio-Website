@@ -3,5 +3,61 @@
     "fullNameAllCaps": "EDISON NYINGCHUO KISEH",
     "title": "Full Stack Developer",
     "shortDescription": "Passionate full stack developer with experience building modern web applications using JavaScript, TypeScript, Angular, React, and Node.js. Dedicated to writing clean, efficient code and continuously learning new technologies."
+  },
+
+  "cvLeftSide": {
+    "contactInformation": {
+      "email": "nyingchuokiseh@gmail.com",
+      "phone": "+32465895065",
+      "location": "Vlaams Brabant, Belgium",
+      "nationality": "Cameroonian",
+      "linkedIn": "@edison-kiseh",
+      "linkedInUrl": "https://www.linkedin.com/in/edison-kiseh-392731271/"
+    },
+
+    "skills": {
+      "programmingLanguages": [
+        { "name": "C", "proficiency": "Beginner" },
+        { "name": "C++", "proficiency": "Intermediate" },
+        { "name": "C#", "proficiency": "Advanced" },
+        { "name": "Python", "proficiency": "Intermediate" },
+        { "name": "HTML/CSS", "proficiency": "Advanced" },
+        { "name": "SQL", "proficiency": "Advanced" },
+        { "name": "PHP", "proficiency": "Intermediate" },
+        { "name": "JavaScript", "proficiency": "Intermediate" }
+      ],
+
+      "frameworksAndLibraries": [
+        { "name": "React", "proficiency": "Intermediate" },
+        { "name": "Angular", "proficiency": "Advanced" },
+        { "name": "Laravel", "proficiency": "Beginner" },
+        { "name": ".NET", "proficiency": "Advanced" },
+        { "name": "Ionic", "proficiency": "Beginner" },
+        { "name": "Electron", "proficiency": "Beginner" }
+      ],
+
+      "toolsAndPlatforms": [
+        { "name": "Git", "proficiency": "Intermediate" },
+        { "name": "GitHub", "proficiency": "Intermediate" },
+        { "name": "Docker", "proficiency": "Beginner" },
+        { "name": "Azure", "proficiency": "Beginner" },
+        { "name": "Linux", "proficiency": "Intermediate" }
+      ],
+
+      "softSkills": [
+        "Teamwork",
+        "Good Communication",
+        "Problem-solving",
+        "Adaptability",
+        "Cool-headed"
+      ],
+
+      "spokenLanguages": [
+        { "name": "Kom (Dialect)", "proficiency": "Native" },
+        { "name": "English", "proficiency": "Native" },
+        { "name": "French", "proficiency": "Proficient (C2)" },
+        { "name": "Dutch", "proficiency": "Elementary (A2)" }
+      ]
+    }
   }
 }
