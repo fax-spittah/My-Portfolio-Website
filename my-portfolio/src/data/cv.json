@@ -59,5 +59,51 @@
         { "name": "Dutch", "proficiency": "Elementary (A2)" }
       ]
     }
+  },
+
+  "cvMainSide": {
+    "education": {
+      "name": "Bachelor's in Electronics-ICT - Major ICT",
+      "date": "2022 - 2025",
+      "universityName": "Thomas More University of Applied Sciences",
+      "description": [
+        "Graduated with a final average of 76.50%.",
+        "Honors: Received the Willy Asselman award for the best bachelor thesis of Electronics-ICT."
+      ]
+    },
+
+    "professionalExperience": [
+      {
+        "jobTitle": "Full Stack Developer Intern",
+        "companyName": "Avanade",
+        "date": "Feb 2025 - Jun 2025",
+        "responsibilities": [
+          "Developed a real-time support chat platform with React & Next.js for the frontend, and C# .NET for the backend, hosted on Azure.",
+          "Integrated Azure Communication Services to enable duplex messaging and multi-agent support.",
+          "Collaborated in Agile teams, improving sprint delivery efficiency."
+        ]
+      }
+    ],
+
+    "otherExperience": [
+      "Worked in customer-facing student jobs at Brico, Walibi, Delhaize, and Oxfam.",
+      "Developed strong teamwork and collaboration skills.",
+      "Improved communication and customer service abilities."
+    ],
+
+    "projects": [
+      {
+        "projectName": "Avanade Support Hub",
+        "date": "Feb 2025 - Jun 2025",
+        "description": "Developed a real-time chat platform connecting users with support agents, featuring secure duplex messaging, WebSocket-based updates, multi-agent management, and seamless integration with third-party websites.",
+        "technologies": "React, Next.js, TypeScript, C# .NET, Azure Communication Services"
+      },
+      {
+        "projectName": "Note Application",
+        "date": "2024",
+        "description": "Developed a note-taking application as a school project similar to Microsoft's OneNote app, with Angular and Firebase. It features user authentication, real-time data synchronization, and CRUD operations for notes. ",
+        "technologies": "Angular, TypeScript, Firebase"
+      }
+    ]
   }
 }

@@ -1,6 +1,12 @@
 ---
 import CVItem from "./CVItem.astro";
 import IconTextAlign from "./IconTextAlign.astro";
+import cvData from "../../data/cv.json";
+
+const education = cvData.cvMainSide.education;
+const professionalExperience = cvData.cvMainSide.professionalExperience;
+const projects = cvData.cvMainSide.projects;
+const otherExperiences = cvData.cvMainSide.otherExperience;
 ---
 
 <div class="main-container md:max-w-[70%] flex flex-col gap-4 p-5">
@@ -10,13 +16,10 @@ import IconTextAlign from "./IconTextAlign.astro";
 
       <hr />
       <CVItem
-        name="Bachelor's in Electronics-ICT - Major ICT"
-        date="2022 - 2025"
-        universityName="Thomas More University of Applied Sciences"
-        description={[
-          "Graduated with a final average of 76.50%.",
-          "Honors: Received the Willy Asselman award for the best bachelor thesis of Electronics-ICT.",
-        ]}
+        name={education.name}
+        date={education.date}
+        universityName={education.universityName}
+        description={education.description}
       />
     </div>
 
@@ -29,16 +32,16 @@ import IconTextAlign from "./IconTextAlign.astro";
 
       <hr />
       <div class="mb-4">
-        <CVItem
-          name="Avanade"
-          date="Feb 2025 - Jun 2025"
-          jobTitle="Full Stack Developer Intern"
-          description={[
-            "Developed a real-time support chat platform with React & Next.js for the frontend, and C# .NET for the backend, hosted on Azure.",
-            "Integrated Azure Communication Services to enable duplex messaging and multi-agent support.",
-            "Collaborated in Agile teams, improving sprint delivery efficiency.",
-          ]}
-        />
+        {
+          professionalExperience.map((experience) => (
+            <CVItem
+              name={experience.companyName}
+              date={experience.date}
+              jobTitle={experience.jobTitle}
+              description={experience.responsibilities}
+            />
+          ))
+        }
 
         <p class="md:text-lg sm:text-base font-semibold">
           Other Work Experience
@@ -48,12 +51,7 @@ import IconTextAlign from "./IconTextAlign.astro";
         </p>
 
         <ul class="list-disc ml-5 text-sm">
-          <li>
-            Worked in customer-facing student jobs at Brico, Walibi, Delhaize,
-            and Oxfam.
-          </li>
-          <li>Developed strong teamwork and collaboration skills.</li>
-          <li>Improved communication and customer service abilities.</li>
+          {otherExperiences.map((job) => <li>{job}</li>)}
         </ul>
       </div>
       <div>
@@ -61,18 +59,16 @@ import IconTextAlign from "./IconTextAlign.astro";
         <hr />
       </div>
       <div class="flex flex-col gap-4">
-        <CVItem
-          name="Avanade Support Hub"
-          date="Feb 2025 - Jun 2025"
-          technologies="React, Next.js, TypeScript, C# .NET, Azure Communication Services"
-          description="Developed a real-time chat platform connecting users with support agents, featuring secure duplex messaging, WebSocket-based updates, multi-agent management, and seamless integration with third-party websites."
-        />
-        <CVItem
-          name="Note Application"
-          date="2024"
-          technologies="Angular, TypeScript, Firebase"
-          description="Developed a note-taking application as a school project similar to Microsoft's OneNote app, with Angular and Firebase. It features user authentication, real-time data synchronization, and CRUD operations for notes. "
-        />
+        {
+          projects.map((project) => (
+            <CVItem
+              name={project.projectName}
+              date={project.date}
+              technologies={project.technologies}
+              description={project.description}
+            />
+          ))
+        }
       </div>
     </div>
   </div>
