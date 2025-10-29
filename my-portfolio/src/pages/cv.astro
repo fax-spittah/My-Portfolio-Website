@@ -5,6 +5,7 @@ import CVMain from "../components/cv/CVMain.astro";
 import Layout from "../layouts/Layout.astro";
 import { Icon } from "astro-icon/components";
 import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
 ---
 
 <Layout>
@@ -26,8 +27,12 @@ import Header from "../components/Header.astro";
       <CVMain />
     </div>
   </div>
-  <div class="dummy-div md:h-[4rem] print-hide">
+  <div class="dummy-div md:h-[3rem] print-hide">
     <!-- This div is to create space at the bottom for the fixed print button -->
+  </div>
+
+  <div class="print-hide">
+    <Footer />
   </div>
 
   <style>
