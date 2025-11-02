@@ -1,0 +1,68 @@
+---
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout>
+  <Header />
+
+  <div class="about-page">
+    <h2>About me</h2>
+    <img src="/assets/profile-picture.jpg" alt="Profile Picture" />
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci optio,
+      autem doloribus culpa eveniet ab, quis illum error magni quisquam vitae
+      nobis deserunt esse. Dolores aliquid amet doloremque ratione quibusdam.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+      voluptate eum magnam dolorum maiores magni, repudiandae ad ea dolor.
+      Sapiente temporibus a sit. Beatae numquam ipsa itaque tempora blanditiis
+      consequatur.
+    </p>
+
+    <h2>Skills</h2>
+    <div>
+      <div class="frontend">
+        <h3>Frontend</h3>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>React</li>
+          <li>Angular</li>
+        </ul>
+      </div>
+
+      <div class="backend">
+        <h3>Backend</h3>
+        <ul>
+          <li>C#</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="flex flex-row justify-between p-4">
+      <div>
+        <h3>My education</h3>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente
+          eligendi nam, consequatur eius quos voluptatem harum odio. Et, aut
+          iste inventore quo, quod iusto eligendi ullam doloribus optio
+          reiciendis vel?
+        </p>
+      </div>
+
+      <div>
+        <h3>My experience</h3>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente
+          eligendi nam, consequatur eius quos voluptatem harum odio. Et, aut
+          iste inventore quo, quod iusto eligendi ullam doloribus optio
+          reiciendis vel?
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <Footer />
+</Layout>
