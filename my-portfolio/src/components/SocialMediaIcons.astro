@@ -1,0 +1,11 @@
+---
+import { Icon } from "astro-icon/components";
+
+interface Props {
+  iconName: string;
+}
+
+const { iconName }: Props = Astro.props;
+---
+
+<Icon name={iconName} class="w-10 h-10 border-2 p-[0.3rem] rounded-2xl" />
