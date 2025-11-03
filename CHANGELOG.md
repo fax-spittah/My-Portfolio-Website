@@ -1,5 +1,30 @@
 # Changelog
 
+## [1.3.0](https://github.com/fax-spittah/My-Portfolio-Website/compare/v1.2.0...v1.3.0) (2025-10-29)
+
+
+### Features
+
+* add CV data to JSON and update CVHeader component to use dynamic content ([0f3f210](https://github.com/fax-spittah/My-Portfolio-Website/commit/0f3f21028b44ad360e5f9d58cc1d34ac6536355f))
+* add dynamic name rendering in Header and Layout components using JSON data ([c85818e](https://github.com/fax-spittah/My-Portfolio-Website/commit/c85818e44bdd53961e19717327443a76375baa3a))
+* add hamburger menu component and integrate into header ([596ce5f](https://github.com/fax-spittah/My-Portfolio-Website/commit/596ce5f0f8367f99bff59cd85954c90884b6bfd8))
+* add structured CV data to JSON and update CVMain component for dynamic rendering ([ad5076a](https://github.com/fax-spittah/My-Portfolio-Website/commit/ad5076acda73960f11407528a4e23ce25acd0527))
+* added a simple footer to the application ([acc1c79](https://github.com/fax-spittah/My-Portfolio-Website/commit/acc1c79ef0a3a482ee6ee0629d8b00bb25303685))
+* added a simple footer to the application ([c40b427](https://github.com/fax-spittah/My-Portfolio-Website/commit/c40b427185975d8563b08753ca4e8d782781ef69))
+* enhance CV components with dynamic data from JSON and improve structure ([dc7a99f](https://github.com/fax-spittah/My-Portfolio-Website/commit/dc7a99f9b40f9f2071251657408eaaa55f321f87))
+* enhance hamburger menu functionality and update layout structure ([6d02366](https://github.com/fax-spittah/My-Portfolio-Website/commit/6d02366f5fb98705ac30a4de008d7a4cf48a0cb9))
+* implement hamburger menu toggle functionality and update component structure ([e96456a](https://github.com/fax-spittah/My-Portfolio-Website/commit/e96456ab804fad6fae6c12473212b95f5d33b9de))
+* introducing a simple json db ([d304d46](https://github.com/fax-spittah/My-Portfolio-Website/commit/d304d4691c095a15e224edddd1968252a7c1a9fe))
+* mobile navigation ([26549f4](https://github.com/fax-spittah/My-Portfolio-Website/commit/26549f4ea9d45e5c14e10d22c22b7a796bcde7e3))
+* update header text size and improve responsive display ([278fa44](https://github.com/fax-spittah/My-Portfolio-Website/commit/278fa443edf858e89abe2f3da35798aedc3ce532))
+
+
+### Bug Fixes
+
+* removed axios dep ([80b3aa6](https://github.com/fax-spittah/My-Portfolio-Website/commit/80b3aa613fcdd66fc8eadbc4489f57786da0160c))
+* removed axios dep ([c95c709](https://github.com/fax-spittah/My-Portfolio-Website/commit/c95c709d1cba337e150cb9890a69934a1df22d84))
+* update header text size and improve responsive display ([4fb8c0d](https://github.com/fax-spittah/My-Portfolio-Website/commit/4fb8c0dfc6ee91d7792bff5a20b87941fa870b9e))
+
 ## [1.2.0](https://github.com/fax-spittah/My-Portfolio-Website/compare/v1.1.0...v1.2.0) (2025-09-23)
 
 

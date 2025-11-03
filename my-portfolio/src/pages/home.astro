@@ -1,32 +1,12 @@
 ---
 import Header from "../components/Header.astro";
 import Layout from "../layouts/Layout.astro";
-import picture from "../assets/my-pic.jpg";
-import { Icon } from "astro-icon/components";
+import Footer from "../components/Footer.astro";
 ---
 
 <Layout>
   <Header />
   <title>Home</title>
-
-  <div class="flex flex-col md:flex-row items-center justify-center-6">
-    <img src={picture.src} alt="Profile Picture" class="w-90 h-90" />
-    <div>
-      <h1 class="text-4xl font-bold mt-4">Edison Kiseh</h1>
-      <p class="mt-2 text-lg">Full Stack Developer</p>
-      <p class="mt-4">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore,
-        fugiat. Cumque corrupti dolorem fugit voluptate est ea eos nobis maxime
-        blanditiis, corporis, dolores earum ullam quas optio incidunt porro
-        illo.
-      </p>
-      <div class="icons flex flex-row mt-4">
-        <Icon name="linkedIn" class="w-6 h-6 mr-4" />
-        <Icon name="github" class="w-6 h-6 mr-4" />
-        <Icon name="email" class="w-6 h-6 mr-4" />
-        <Icon name="instagram" class="w-6 h-6 mr-4" />
-        <Icon name="discord" class="w-6 h-6 mr-4" />
-      </div>
-    </div>
-  </div>
+  <h1 class="text-3xl font-bold underline">Hello world!</h1>
+  <Footer />
 </Layout>
