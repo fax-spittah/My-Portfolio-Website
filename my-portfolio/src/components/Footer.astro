@@ -2,41 +2,33 @@
 import data from "../data/general.json";
 
 const email = data.contactInformation.email;
-const github = data.contactInformation.github;
 const linkedInURL = data.contactInformation.linkedInUrl;
+const discord = data.contactInformation.discord;
 ---
 
-<footer class="text-center p-6 bg-gray-100">
+<footer class="p-6 bg-gray-100">
   <div
-    class="footer-sections flex flex-col md:flex-row w-full space-y-4 justify-around mb-4"
+    class="footer-sections flex flex-col md:flex-row w-full justify-between align-left mb-4"
   >
-    <div class="footer-about">
-      <h2 class="font-bold">Edison N. Kiseh</h2>
-      <p class="footer-description">Full Stack Developer | Software Engineer</p>
-      <p>
-        Wezembeek-Oppem, Belgium<br />
-      </p>
+    <div class="footer-connect w-1/2">
+      <h2 class="font-semibold text-lg md:text-2xl mb-2">Contact me</h2>
+      <p><a href={linkedInURL}>LinkedIn</a></p>
+      <p><a href=`mailto: ${email}`>Email</a></p>
+      <p><a href={discord}>Discord</a></p>
     </div>
 
-    <div class="footer-links">
-      <h2 class="font-bold">Quick links</h2>
+    <div class="footer-links w-1/2">
+      <h2 class="font-semibold text-lg md:text-2xl mb-2">Navigation</h2>
       <nav class="footer-nav flex flex-col">
         <a href="/">Home</a>
         <a href="/about">About</a>
         <a href="/cv">CV</a>
       </nav>
     </div>
-
-    <div class="footer-connect">
-      <h2 class="font-bold">Let's connect</h2>
-      <p><a href={linkedInURL}>LinkedIn</a></p>
-      <p><a href=`mailto: ${email}`>Email</a></p>
-      <p><a href={github}>GitHub</a></p>
-    </div>
   </div>
 
   <hr />
-  <p class="footer-text text-center mt-4 text-sm">
+  <p class="footer-text mt-4 text-sm">
     © {new Date().getFullYear()} Edison N. Kiseh. All rights reserved.
   </p>
 </footer>
