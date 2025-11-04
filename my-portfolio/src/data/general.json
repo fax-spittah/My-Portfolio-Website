@@ -1,4 +1,17 @@
 {
   "fullName": "Edison Nyingchuo Kiseh",
-  "shortName": "Edison Kiseh"
+  "shortName": "Edison Kiseh",
+  "title": "Full Stack Developer",
+
+  "contactInformation": {
+    "email": "nyingchuokiseh@gmail.com",
+    "phone": "+32465895065",
+    "location": "Vlaams Brabant, Belgium",
+    "nationality": "Cameroonian",
+    "github": "https://github.com/fax-spittah",
+    "discord": "https://discordapp.com/users/622324507591442461",
+    "instagram": "https://www.instagram.com/the_awesome_lord/",
+    "linkedIn": "@edison-kiseh",
+    "linkedInUrl": "https://www.linkedin.com/in/edison-kiseh-392731271/"
+  }
 }

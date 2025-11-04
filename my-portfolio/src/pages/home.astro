@@ -5,6 +5,13 @@ import Footer from "../components/Footer.astro";
 
 import profileImage from "../assets/my-pic.jpg";
 import SocialMediaIcons from "../components/SocialMediaIcons.astro";
+import data from "../data/general.json";
+
+const email = data.contactInformation.email;
+const linkedInURL = data.contactInformation.linkedInUrl;
+const discord = data.contactInformation.discord;
+const github = data.contactInformation.github;
+const instagram = data.contactInformation.instagram;
 ---
 
 <Layout>
@@ -23,11 +30,23 @@ import SocialMediaIcons from "../components/SocialMediaIcons.astro";
       <h1 class="text-3xl md:text-5xl font-bold">EDISON KISEH</h1>
       <p class="mt-4">I am a Full Stack Developer</p>
       <div class="flex flex-row justify-around mt-6">
-        <SocialMediaIcons iconName="email" />
-        <SocialMediaIcons iconName="discord" />
-        <SocialMediaIcons iconName="github" />
-        <SocialMediaIcons iconName="linkedIn" />
-        <SocialMediaIcons iconName="instagram" />
+        <SocialMediaIcons iconName="email" linkUrl={email} title="Email" />
+        <SocialMediaIcons
+          iconName="discord"
+          linkUrl={discord}
+          title="Discord"
+        />
+        <SocialMediaIcons iconName="github" linkUrl={github} title="GitHub" />
+        <SocialMediaIcons
+          iconName="linkedIn"
+          linkUrl={linkedInURL}
+          title="LinkedIn"
+        />
+        <SocialMediaIcons
+          iconName="instagram"
+          linkUrl={instagram}
+          title="Instagram"
+        />
       </div>
     </div>
   </section>
