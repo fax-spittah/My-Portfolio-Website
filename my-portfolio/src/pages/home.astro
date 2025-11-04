@@ -27,7 +27,7 @@ const instagram = data.contactInformation.instagram;
         alt="Profile Picture"
         class="w-40 h-40 md:w-45 md:h-45 rounded-full mx-auto mb-4 object-cover"
       />
-      <h1 class="text-3xl md:text-5xl font-bold">EDISON KISEH</h1>
+      <h1 class="text-3xl md:text-5xl font-semibold">EDISON KISEH</h1>
       <p class="mt-4">I am a Full Stack Developer</p>
       <div class="flex flex-row justify-around mt-6">
         <SocialMediaIcons iconName="email" linkUrl={email} title="Email" />
@@ -51,27 +51,27 @@ const instagram = data.contactInformation.instagram;
     </div>
   </section>
 
-  <div class="border-t-1 border-b-1">
-    <h2 class="text-2xl text-center font-bold">About me</h2>
-    <p><b>HEY!</b></p>
-    <p>
-      My name is <b>Edison Nyingchuo Kiseh</b> Lorem ipsum, dolor sit amet consectetur
-      adipisicing elit. Voluptates aspernatur pariatur inventore maiores doloremque
-      reprehenderit aliquid vero, molestias possimus fuga facere, error corporis
-      architecto doloribus ipsum tenetur quisquam ex dolor! Lorem ipsum dolor sit
-      amet, consectetur adipisicing elit. Distinctio velit ex tempora quo natus obcaecati
-      maxime magnam quidem corporis culpa nam, expedita veritatis, repellat officiis
-      harum id libero quod corrupti.
+  <div class="pl-8 pr-8">
+    <h2 class="text-2xl text-center font-semibold mb-7 mt-7">About me</h2>
+    <p class="text-xl"><b>HEYLLOW!</b></p>
+    <p class="text-lg">
+      My name is <b>Edison Nyingchuo Kiseh</b> and I am a Cameroonian that lives
+      in Belgium. I love coding, sports, music. Feel free to checkout the rest of
+      this site to get to know more about me and do contact me if necessary :)
     </p>
-    <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 p-2"
-      >Read More</button
-    >
-  </div>
+    <a href="/about">
+      <button
+        type="button"
+        class="text-white bg-blue-700 hover:bg-blue-800 p-2 mt-2"
+        >Read More</button
+      >
+    </a>
 
-  <div>
-    <h2 class="text-2xl text-center font-bold">Projects</h2>
-    <p></p>
-    <button>See all projects</button>
+    <div>
+      <h2 class="text-2xl text-center font-semibold">Projects</h2>
+      <p></p>
+      <button>See all projects</button>
+    </div>
   </div>
   <Footer />
 </Layout>
