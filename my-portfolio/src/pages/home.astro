@@ -2,16 +2,20 @@
 import Header from "../components/Header.astro";
 import Layout from "../layouts/Layout.astro";
 import Footer from "../components/Footer.astro";
+import ProjectCard from "../components/ProjectCard.astro";
 
 import profileImage from "../assets/my-pic.jpg";
 import SocialMediaIcons from "../components/SocialMediaIcons.astro";
 import data from "../data/general.json";
+
+import cvData from "../data/cv.json";
 
 const email = data.contactInformation.email;
 const linkedInURL = data.contactInformation.linkedInUrl;
 const discord = data.contactInformation.discord;
 const github = data.contactInformation.github;
 const instagram = data.contactInformation.instagram;
+const projects = cvData.cvMainSide.projects;
 ---
 
 <Layout>
@@ -72,9 +76,17 @@ const instagram = data.contactInformation.instagram;
 
     <div class="mt-10 pt-6 pb-6">
       <h2 class="text-3xl text-center font-semibold">Projects</h2>
-      <p></p>
-      <button>See all projects</button>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+        {
+          projects.map((project) => (
+            <ProjectCard
+              projectTitle={project.projectName}
+              projectDescription={project.description}
+            />
+          ))
+        }
+      </div>
     </div>
+    <Footer />
   </div>
-  <Footer />
 </Layout>
