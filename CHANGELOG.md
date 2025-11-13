@@ -1,5 +1,27 @@
 # Changelog
 
+## [1.4.0](https://github.com/fax-spittah/My-Portfolio-Website/compare/v1.3.0...v1.4.0) (2025-11-09)
+
+
+### Features
+
+* about section of the homepage ([13a0786](https://github.com/fax-spittah/My-Portfolio-Website/commit/13a07866d11ee4c39b430bd4892f179fe674a41b))
+* add profile section with dynamic picture and social icons to home page ([5f7d01d](https://github.com/fax-spittah/My-Portfolio-Website/commit/5f7d01d34b02190d46ba97e1e8adfc81f8aaf5e6))
+* adding a card to display the projects of the home page ([ae63583](https://github.com/fax-spittah/My-Portfolio-Website/commit/ae63583e82f4111373f4e206c169d7a7370663b9))
+* basic welcome page layout ([0a32870](https://github.com/fax-spittah/My-Portfolio-Website/commit/0a32870f4e4541ff144fc7b863d4bd96bedde85b))
+* enhance header styling and add profile section with social media icons ([8fd8fad](https://github.com/fax-spittah/My-Portfolio-Website/commit/8fd8fadd4998c6d109cee3d6e9fea8c1af65c976))
+* first look of the me section of the page ([22fa342](https://github.com/fax-spittah/My-Portfolio-Website/commit/22fa342c71a3573481f5df04d495abff992f22dc))
+* modifying welcome page ([9accf7f](https://github.com/fax-spittah/My-Portfolio-Website/commit/9accf7f0ea44520afde2849b9cd9adab3b6e23a4))
+* refactoring the .json data file structure and adding some external links ([11bf608](https://github.com/fax-spittah/My-Portfolio-Website/commit/11bf608e9caea9194a7db09bd554afed44e0f431))
+
+
+### Bug Fixes
+
+* fixing unnecessary marging on the top of the cv page ([2274c98](https://github.com/fax-spittah/My-Portfolio-Website/commit/2274c981d6900b9055375df04987e17a7609a09d))
+* fixing unnecessary marging on the top of the cv page ([ef6bc76](https://github.com/fax-spittah/My-Portfolio-Website/commit/ef6bc76d8d1b668bc9000ebb55a713ee2e01c1d8))
+* fixing up the footer section ([7d6917b](https://github.com/fax-spittah/My-Portfolio-Website/commit/7d6917b06e88bd9c1bae34eb13abf5d890e785bc))
+* rearraging sections ([d15bdbf](https://github.com/fax-spittah/My-Portfolio-Website/commit/d15bdbf23a937a605769707c44b50579b3dce587))
+
 ## [1.3.0](https://github.com/fax-spittah/My-Portfolio-Website/compare/v1.2.0...v1.3.0) (2025-10-29)
 
 
