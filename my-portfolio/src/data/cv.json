@@ -6,16 +6,6 @@
   },
 
   "cvLeftSide": {
-    "contactInformation": {
-      "email": "nyingchuokiseh@gmail.com",
-      "phone": "+32465895065",
-      "location": "Vlaams Brabant, Belgium",
-      "nationality": "Cameroonian",
-      "github": "https://github.com/fax-spittah",
-      "linkedIn": "@edison-kiseh",
-      "linkedInUrl": "https://www.linkedin.com/in/edison-kiseh-392731271/"
-    },
-
     "skills": {
       "programmingLanguages": [
         { "name": "C", "proficiency": "Beginner" },

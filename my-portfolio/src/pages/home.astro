@@ -2,12 +2,91 @@
 import Header from "../components/Header.astro";
 import Layout from "../layouts/Layout.astro";
 import Footer from "../components/Footer.astro";
+import ProjectCard from "../components/ProjectCard.astro";
+
+import profileImage from "../assets/my-pic.jpg";
+import SocialMediaIcons from "../components/SocialMediaIcons.astro";
+import data from "../data/general.json";
+
+import cvData from "../data/cv.json";
+
+const email = data.contactInformation.email;
+const linkedInURL = data.contactInformation.linkedInUrl;
+const discord = data.contactInformation.discord;
+const github = data.contactInformation.github;
+const instagram = data.contactInformation.instagram;
+const projects = cvData.cvMainSide.projects;
 ---
 
 <Layout>
   <Header />
-
   <title>Home</title>
-  <h1 class="text-3xl font-bold underline">Hello world!</h1>
+
+  <section
+    class="min-h-screen bg-center bg-cover flex items-center justify-center"
+  >
+    <div class="text-center p-4">
+      <img
+        src={profileImage.src}
+        alt="Profile Picture"
+        class="w-40 h-40 md:w-45 md:h-45 rounded-full mx-auto mb-4 object-cover"
+      />
+      <h1 class="text-3xl md:text-5xl font-semibold">EDISON KISEH</h1>
+      <p class="mt-4">I am a Full Stack Developer</p>
+      <div class="flex flex-row justify-around mt-6">
+        <SocialMediaIcons iconName="email" linkUrl={email} title="Email" />
+        <SocialMediaIcons
+          iconName="discord"
+          linkUrl={discord}
+          title="Discord"
+        />
+        <SocialMediaIcons iconName="github" linkUrl={github} title="GitHub" />
+        <SocialMediaIcons
+          iconName="linkedIn"
+          linkUrl={linkedInURL}
+          title="LinkedIn"
+        />
+        <SocialMediaIcons
+          iconName="instagram"
+          linkUrl={instagram}
+          title="Instagram"
+        />
+      </div>
+    </div>
+  </section>
+
+  <div class="pl-8 pr-8">
+    <div>
+      <h2 class="text-3xl text-center font-semibold mb-7 mt-7">About me</h2>
+      <p class="text-xl"><b>HEYLLOW!</b></p>
+      <p class="text-lg">
+        My name is <b>Edison Nyingchuo Kiseh</b> and I am a Cameroonian that lives
+        in Belgium. I love coding, sports, music. Feel free to checkout the rest
+        of this site to get to know more about me and do contact me if necessary
+        :)
+      </p>
+      <a href="/about">
+        <button
+          type="button"
+          class="text-white bg-blue-700 hover:bg-blue-800 p-2 mt-2"
+          >Read More</button
+        >
+      </a>
+    </div>
+
+    <div class="mt-10 pt-6 pb-6">
+      <h2 class="text-3xl text-center font-semibold">Projects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+        {
+          projects.map((project) => (
+            <ProjectCard
+              projectTitle={project.projectName}
+              projectDescription={project.description}
+            />
+          ))
+        }
+      </div>
+    </div>
+  </div>
   <Footer />
 </Layout>
