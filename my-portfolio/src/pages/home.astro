@@ -29,9 +29,9 @@ const projects = cvData.cvMainSide.projects;
       <img
         src={profileImage.src}
         alt="Profile Picture"
-        class="w-40 h-40 md:w-45 md:h-45 rounded-full mx-auto mb-4 object-cover"
+        class="w-40 h-40 lg:w-45 lg:h-45 rounded-full mx-auto mb-4 md:mb-0 md:mt-10 object-cover"
       />
-      <h1 class="text-3xl md:text-5xl font-semibold">EDISON KISEH</h1>
+      <h1 class="text-3xl lg:text-5xl font-semibold">EDISON KISEH</h1>
       <p class="mt-4">I am a Full Stack Developer</p>
       <div class="flex flex-row justify-around mt-6">
         <SocialMediaIcons iconName="email" linkUrl={email} title="Email" />
@@ -76,7 +76,7 @@ const projects = cvData.cvMainSide.projects;
 
     <div class="mt-10 pt-6 pb-6">
       <h2 class="text-3xl text-center font-semibold">Projects</h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-6">
         {
           projects.map((project) => (
             <ProjectCard
