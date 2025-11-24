@@ -9,16 +9,18 @@ import Layout from "../layouts/Layout.astro";
   <Header />
 
   <div class="about-page w-[90%] m-auto">
-    <h2 class="text-xl md:text-2xl font-bold text-center">About me</h2>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci optio,
-      autem doloribus culpa eveniet ab, quis illum error magni quisquam vitae
-      nobis deserunt esse. Dolores aliquid amet doloremque ratione quibusdam.
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
-      voluptate eum magnam dolorum maiores magni, repudiandae ad ea dolor.
-      Sapiente temporibus a sit. Beatae numquam ipsa itaque tempora blanditiis
-      consequatur.
-    </p>
+    <div class="about-me p-4">
+      <h2 class="text-xl md:text-2xl font-bold text-center">About me</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci optio,
+        autem doloribus culpa eveniet ab, quis illum error magni quisquam vitae
+        nobis deserunt esse. Dolores aliquid amet doloremque ratione quibusdam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+        voluptate eum magnam dolorum maiores magni, repudiandae ad ea dolor.
+        Sapiente temporibus a sit. Beatae numquam ipsa itaque tempora blanditiis
+        consequatur.
+      </p>
+    </div>
 
     <h2 class="text-xl md:text-2xl font-bold text-center">Used Technologies</h2>
     <div class="technologies-used grid grid-cols-1 md:grid-cols-2 gap-4 p-4">
@@ -74,12 +76,12 @@ import Layout from "../layouts/Layout.astro";
           <TechnologyIconAndName iconName="c" techName="C" />
           <TechnologyIconAndName iconName="cplusplus" techName="C++" />
           <TechnologyIconAndName iconName="python" techName="Python" />
-          <!-- <TechnologyIconAndName iconName="linux" techName="Linux" /> -->
+          <TechnologyIconAndName iconName="linux" techName="Linux" />
         </ul>
       </div>
     </div>
 
-    <div class="flex flex-row justify-between p-4">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 p-4">
       <div>
         <h3 class="text-lg md:text-xl font-bold text-center">My education</h3>
         <p>
