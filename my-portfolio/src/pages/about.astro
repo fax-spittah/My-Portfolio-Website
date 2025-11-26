@@ -4,7 +4,7 @@ import Header from "../components/Header.astro";
 import Layout from "../layouts/Layout.astro";
 import technologies from "../data/technologies.json";
 import TechnologyCard from "../components/about/TechnologyCard.astro";
-import EducationCard from "../components/about/EducationCard.astro";
+import EducationAndExperienceCard from "../components/about/EducationAndExperienceCard.astro";
 import img from "../icons/calendar.svg";
 
 const frontendTechnologies = technologies.frontend;
@@ -42,7 +42,7 @@ const otherTechnologies = technologies.others;
       <div>
         <h3 class="text-lg md:text-xl font-bold text-center">My education</h3>
 
-        <EducationCard
+        <EducationAndExperienceCard
           institutionImg={img.src}
           institutionName="Thomas More"
           program="Application Development"
@@ -55,12 +55,15 @@ const otherTechnologies = technologies.others;
 
       <div>
         <h3 class="text-lg md:text-xl font-bold text-center">My experience</h3>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente
-          eligendi nam, consequatur eius quos voluptatem harum odio. Et, aut
-          iste inventore quo, quod iusto eligendi ullam doloribus optio
-          reiciendis vel?
-        </p>
+
+        <EducationAndExperienceCard
+          institutionImg={img.src}
+          institutionName="Avanade"
+          program="Software Engineer Intern"
+          startDate="February 2025"
+          endDate="June 2025"
+          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci optio, lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci optio, autem doloribus culpa eveniet ab, quis illum error magni quisquam vitae nobis deserunt esse. Dolores aliquid amet doloremque ratione quibusdam. lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci optio, autem doloribus culpa eveniet ab, quis illum error magni quisquam vitae nobis deserunt esse. Dolores aliquid amet doloremque ratione quibusdam."
+        />
       </div>
     </div>
   </div>

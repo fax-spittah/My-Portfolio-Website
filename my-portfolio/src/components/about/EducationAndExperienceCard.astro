@@ -3,7 +3,7 @@ interface Props {
   institutionImg: string;
   institutionName: string;
   program: string;
-  degree: string;
+  degree?: string;
   startDate: string;
   endDate: string;
   description: string;
@@ -20,12 +20,15 @@ const {
 }: Props = Astro.props;
 ---
 
-<div class="w-[70%] mx-auto mt-5 border-1 p-4 bg-blue-50">
+<div class="md:w-[80%] lg:w-[70%] mx-auto mt-5 border-1 p-4 bg-blue-50">
   <div class="flex items-center mb-2">
     <img src={institutionImg} alt="Education Icon" class="w-15 h-15 mr-4" />
     <div>
       <h3 class="text-xl lg:text-2xl font-semibold">{institutionName}</h3>
-      <p class="text-sm italic">{program} | {degree}</p>
+      <p class="text-sm italic">
+        {program}
+        {degree && <> | {degree}</>}
+      </p>
       <p class="text-sm text-gray-500">{startDate} - {endDate}</p>
     </div>
   </div>
