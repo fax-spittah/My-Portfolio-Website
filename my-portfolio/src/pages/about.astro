@@ -3,6 +3,12 @@ import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
 import TechnologyIconAndName from "../components/TechnologyIconAndName.astro";
 import Layout from "../layouts/Layout.astro";
+import technologies from "../data/technologies.json";
+
+const frontendTechnologies = technologies.frontend;
+const backendTechnologies = technologies.backend;
+const devopsTechnologies = technologies.devops;
+const otherTechnologies = technologies.others;
 ---
 
 <Layout>
@@ -27,57 +33,52 @@ import Layout from "../layouts/Layout.astro";
       <div class="frontend">
         <h3 class="text-lg font-semibold">Frontend</h3>
         <div>
-          <TechnologyIconAndName iconName="html5" techName="HTML5" />
-          <TechnologyIconAndName iconName="css3" techName="CSS3" />
-          <TechnologyIconAndName iconName="javascript" techName="JavaScript" />
-          <TechnologyIconAndName iconName="angular" techName="Angular" />
-          <TechnologyIconAndName iconName="typescript" techName="TypeScript" />
-          <TechnologyIconAndName iconName="laravel" techName="Laravel" />
-          <TechnologyIconAndName iconName="react" techName="React" />
-          <TechnologyIconAndName iconName="astro" techName="Astro" />
-          <TechnologyIconAndName
-            iconName="tailwindcss"
-            techName="Tailwind CSS"
-          />
+          {
+            frontendTechnologies.map((tech) => (
+              <TechnologyIconAndName
+                iconName={tech.iconName}
+                techName={tech.techName}
+              />
+            ))
+          }
         </div>
       </div>
 
       <div class="backend">
         <h3 class="text-lg font-semibold">Backend</h3>
-        <ul>
-          <TechnologyIconAndName iconName="csharp" techName="C#" />
-          <TechnologyIconAndName
-            iconName="dotnet"
-            techName=".NET & .NET Core"
-          />
-          <TechnologyIconAndName iconName="php" techName="PHP" />
-          <TechnologyIconAndName iconName="nodejs" techName="Node.js" />
-          <TechnologyIconAndName iconName="mysql" techName="MySQL" />
-        </ul>
+        {
+          backendTechnologies.map((tech) => (
+            <TechnologyIconAndName
+              iconName={tech.iconName}
+              techName={tech.techName}
+            />
+          ))
+        }
       </div>
 
       <div class="devops">
         <h3 class="text-lg font-semibold">DevOps</h3>
-        <ul>
-          <TechnologyIconAndName iconName="git" techName="Git" />
-          <TechnologyIconAndName iconName="github" techName="GitHub" />
-          <TechnologyIconAndName
-            iconName="githubActions"
-            techName="GitHub Actions"
-          />
-          <TechnologyIconAndName iconName="docker" techName="Docker" />
-          <TechnologyIconAndName iconName="azure" techName="Microsoft Azure" />
-        </ul>
+
+        {
+          devopsTechnologies.map((tech) => (
+            <TechnologyIconAndName
+              iconName={tech.iconName}
+              techName={tech.techName}
+            />
+          ))
+        }
       </div>
 
       <div class="Others">
         <h3 class="text-lg font-semibold">Others</h3>
-        <ul>
-          <TechnologyIconAndName iconName="c" techName="C" />
-          <TechnologyIconAndName iconName="cplusplus" techName="C++" />
-          <TechnologyIconAndName iconName="python" techName="Python" />
-          <TechnologyIconAndName iconName="linux" techName="Linux" />
-        </ul>
+        {
+          otherTechnologies.map((tech) => (
+            <TechnologyIconAndName
+              iconName={tech.iconName}
+              techName={tech.techName}
+            />
+          ))
+        }
       </div>
     </div>
 

@@ -1,0 +1,33 @@
+{
+  "frontend": [
+    { "iconName": "html5", "techName": "HTML5" },
+    { "iconName": "css3", "techName": "CSS3" },
+    { "iconName": "javascript", "techName": "JavaScript" },
+    { "iconName": "angular", "techName": "Angular" },
+    { "iconName": "typescript", "techName": "TypeScript" },
+    { "iconName": "laravel", "techName": "Laravel" },
+    { "iconName": "react", "techName": "React" },
+    { "iconName": "astro", "techName": "Astro" },
+    { "iconName": "tailwindcss", "techName": "Tailwind CSS" }
+  ],
+  "backend": [
+    { "iconName": "csharp", "techName": "C#" },
+    { "iconName": "dotnet", "techName": ".NET & .NET Core" },
+    { "iconName": "php", "techName": "PHP" },
+    { "iconName": "nodejs", "techName": "Node.js" },
+    { "iconName": "mysql", "techName": "MySQL" }
+  ],
+  "devops": [
+    { "iconName": "git", "techName": "Git" },
+    { "iconName": "github", "techName": "GitHub" },
+    { "iconName": "githubActions", "techName": "GitHub Actions" },
+    { "iconName": "docker", "techName": "Docker" },
+    { "iconName": "azure", "techName": "Microsoft Azure" }
+  ],
+  "others": [
+    { "iconName": "c", "techName": "C" },
+    { "iconName": "cplusplus", "techName": "C++" },
+    { "iconName": "python", "techName": "Python" },
+    { "iconName": "linux", "techName": "Linux" }
+  ]
+}
