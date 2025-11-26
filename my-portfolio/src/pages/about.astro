@@ -4,6 +4,8 @@ import Header from "../components/Header.astro";
 import Layout from "../layouts/Layout.astro";
 import technologies from "../data/technologies.json";
 import TechnologyCard from "../components/about/TechnologyCard.astro";
+import EducationCard from "../components/about/EducationCard.astro";
+import img from "../icons/calendar.svg";
 
 const frontendTechnologies = technologies.frontend;
 const backendTechnologies = technologies.backend;
@@ -39,12 +41,16 @@ const otherTechnologies = technologies.others;
     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 p-4">
       <div>
         <h3 class="text-lg md:text-xl font-bold text-center">My education</h3>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente
-          eligendi nam, consequatur eius quos voluptatem harum odio. Et, aut
-          iste inventore quo, quod iusto eligendi ullam doloribus optio
-          reiciendis vel?
-        </p>
+
+        <EducationCard
+          institutionImg={img.src}
+          institutionName="Thomas More"
+          program="Application Development"
+          degree="Professional Bachelors"
+          startDate="2022"
+          endDate="2025"
+          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci optio, lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci optio, autem doloribus culpa eveniet ab, quis illum error magni quisquam vitae nobis deserunt esse. Dolores aliquid amet doloremque ratione quibusdam. lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci optio, autem doloribus culpa eveniet ab, quis illum error magni quisquam vitae nobis deserunt esse. Dolores aliquid amet doloremque ratione quibusdam."
+        />
       </div>
 
       <div>
