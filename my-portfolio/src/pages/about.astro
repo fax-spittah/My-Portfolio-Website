@@ -1,9 +1,9 @@
 ---
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
-import TechnologyIconAndName from "../components/TechnologyIconAndName.astro";
 import Layout from "../layouts/Layout.astro";
 import technologies from "../data/technologies.json";
+import TechnologyCard from "../components/about/TechnologyCard.astro";
 
 const frontendTechnologies = technologies.frontend;
 const backendTechnologies = technologies.backend;
@@ -30,56 +30,10 @@ const otherTechnologies = technologies.others;
 
     <h2 class="text-xl md:text-2xl font-bold text-center">Used Technologies</h2>
     <div class="technologies-used grid grid-cols-1 md:grid-cols-2 gap-4 p-4">
-      <div class="frontend">
-        <h3 class="text-lg font-semibold">Frontend</h3>
-        <div>
-          {
-            frontendTechnologies.map((tech) => (
-              <TechnologyIconAndName
-                iconName={tech.iconName}
-                techName={tech.techName}
-              />
-            ))
-          }
-        </div>
-      </div>
-
-      <div class="backend">
-        <h3 class="text-lg font-semibold">Backend</h3>
-        {
-          backendTechnologies.map((tech) => (
-            <TechnologyIconAndName
-              iconName={tech.iconName}
-              techName={tech.techName}
-            />
-          ))
-        }
-      </div>
-
-      <div class="devops">
-        <h3 class="text-lg font-semibold">DevOps</h3>
-
-        {
-          devopsTechnologies.map((tech) => (
-            <TechnologyIconAndName
-              iconName={tech.iconName}
-              techName={tech.techName}
-            />
-          ))
-        }
-      </div>
-
-      <div class="Others">
-        <h3 class="text-lg font-semibold">Others</h3>
-        {
-          otherTechnologies.map((tech) => (
-            <TechnologyIconAndName
-              iconName={tech.iconName}
-              techName={tech.techName}
-            />
-          ))
-        }
-      </div>
+      <TechnologyCard title="Frontend" technologies={frontendTechnologies} />
+      <TechnologyCard title="Backend" technologies={backendTechnologies} />
+      <TechnologyCard title="DevOps" technologies={devopsTechnologies} />
+      <TechnologyCard title="Other" technologies={otherTechnologies} />
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 p-4">

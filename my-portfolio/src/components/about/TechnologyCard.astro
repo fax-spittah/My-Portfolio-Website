@@ -1,0 +1,26 @@
+---
+import TechnologyIconAndName from "../TechnologyIconAndName.astro";
+
+interface Props {
+  title: string;
+  technologies: { iconName: string; techName: string }[];
+}
+
+const { title, technologies }: Props = Astro.props;
+---
+
+<div class={title}>
+  <h3 class="text-lg font-semibold">{title}</h3>
+  <div
+    class="bg-white rounded-lg shadow-sm border border-gray-200 p-2 space-y-3 hover:shadow-md transition-shadow duration-150"
+  >
+    {
+      technologies.map((tech) => (
+        <TechnologyIconAndName
+          iconName={tech.iconName}
+          techName={tech.techName}
+        />
+      ))
+    }
+  </div>
+</div>
