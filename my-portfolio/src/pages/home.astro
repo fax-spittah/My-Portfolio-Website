@@ -7,6 +7,7 @@ import ProjectCard from "../components/ProjectCard.astro";
 import profileImage from "../assets/my-pic.jpg";
 import SocialMediaIcons from "../components/SocialMediaIcons.astro";
 import data from "../data/general.json";
+import bgImage from "../assets/home-bg.jpg";
 
 import cvData from "../data/cv.json";
 
@@ -23,17 +24,25 @@ const projects = cvData.cvMainSide.projects;
   <title>Home</title>
 
   <section
-    class="min-h-screen bg-center bg-cover flex items-center justify-center"
+    class="min-h-screen bg-center bg-cover flex items-center justify-center relative overflow-hidden"
+    style={`background-image: url(${bgImage.src});`}
   >
-    <div class="text-center p-4">
+    <div class="absolute inset-0 bg-black/40"></div>
+    <div class="text-center p-4 relative z-10">
       <img
         src={profileImage.src}
         alt="Profile Picture"
-        class="w-40 h-40 lg:w-45 lg:h-45 rounded-full mx-auto mb-4 md:mb-0 md:mt-10 object-cover"
+        class="w-40 h-40 lg:w-50 lg:h-50 rounded-full mx-auto mb-6 md:mb-0 md:mt-10 object-cover border-2 border-white shadow-2xl transition-transform duration-300 hover:scale-105"
       />
-      <h1 class="text-3xl lg:text-5xl font-semibold">EDISON KISEH</h1>
-      <p class="mt-4">I am a Full Stack Developer</p>
-      <div class="flex flex-row justify-around mt-6">
+      <h1 class="text-2xl lg:text-5xl font-bold text-white mt-8 drop-shadow-lg">
+        EDISON KISEH
+      </h1>
+      <p
+        class="mt-6 text-xl lg:text-2xl text-gray-100 font-medium drop-shadow-lg"
+      >
+        Full Stack Developer
+      </p>
+      <div class="flex flex-row justify-center gap-6 mt-10">
         <SocialMediaIcons iconName="email" linkUrl={email} title="Email" />
         <SocialMediaIcons
           iconName="discord"
@@ -55,28 +64,45 @@ const projects = cvData.cvMainSide.projects;
     </div>
   </section>
 
-  <div class="pl-8 pr-8">
-    <div>
-      <h2 class="text-3xl text-center font-semibold mb-7 mt-7">About me</h2>
-      <p class="text-xl"><b>HEYLLOW!</b></p>
-      <p class="text-lg">
-        My name is <b>Edison Nyingchuo Kiseh</b> and I am a Cameroonian that lives
-        in Belgium. I love coding, sports, music. Feel free to checkout the rest
-        of this site to get to know more about me and do contact me if necessary
-        :)
+  <div class="px-6 md:px-12 py-16">
+    <div class="max-w-4xl mx-auto">
+      <h2
+        class="text-4xl md:text-5xl text-center font-bold mb-10 mt-4 text-gray-900"
+      >
+        About Me
+      </h2>
+      <p class="text-2xl text-center font-semibold text-blue-600 mb-4">
+        Hey there! 👋
       </p>
-      <a href="/about">
-        <button
-          type="button"
-          class="text-white bg-blue-700 hover:bg-blue-800 p-2 mt-2"
-          >Read More</button
-        >
-      </a>
+      <p class="text-lg text-gray-700 leading-relaxed text-center">
+        My name is <span class="font-semibold text-gray-900"
+          >Edison Nyingchuo Kiseh</span
+        >, and I'm a Cameroonian living in Belgium. I'm passionate about coding,
+        sports, and music. Feel free to explore the rest of this site to learn
+        more about me, and don't hesitate to reach out!
+      </p>
+      <div class="flex justify-center mt-8">
+        <a href="/about">
+          <button
+            type="button"
+            class="text-white bg-blue-600 hover:bg-blue-700 active:scale-95 font-semibold py-3 px-8 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl"
+            >Read More</button
+          >
+        </a>
+      </div>
     </div>
 
-    <div class="mt-10 pt-6 pb-6">
-      <h2 class="text-3xl text-center font-semibold">Projects</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+    <div
+      class="mt-16 pt-12 pb-12 bg-gradient-to-br from-gray-50 to-white rounded-xl shadow-sm"
+    >
+      <h2
+        class="text-4xl md:text-5xl text-center font-bold mb-12 text-gray-900"
+      >
+        Featured Projects
+      </h2>
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-6 md:px-12"
+      >
         {
           projects.map((project) => (
             <ProjectCard

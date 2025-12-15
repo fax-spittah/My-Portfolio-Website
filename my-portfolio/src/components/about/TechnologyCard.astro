@@ -10,9 +10,9 @@ const { title, technologies }: Props = Astro.props;
 ---
 
 <div class={title}>
-  <h3 class="text-lg font-semibold">{title}</h3>
+  <h3 class="text-lg font-bold text-gray-900 mb-4">{title}</h3>
   <div
-    class="bg-white rounded-lg shadow-sm border border-gray-200 p-2 space-y-3 hover:shadow-md transition-shadow duration-150"
+    class="bg-white rounded-xl shadow-md hover:shadow-lg border border-gray-200 p-4 space-y-3 transition-all duration-300 hover:-translate-y-1"
   >
     {
       technologies.map((tech) => (

@@ -4,6 +4,9 @@ import Header from "../components/Header.astro";
 import Layout from "../layouts/Layout.astro";
 import technologies from "../data/technologies.json";
 import TechnologyCard from "../components/about/TechnologyCard.astro";
+import EducationAndExperienceCard from "../components/about/EducationAndExperienceCard.astro";
+import thomasMoreImg from "../icons/thomasMoreLogo.svg";
+import avandeIcon from "../icons/avanadeLogo.svg";
 
 const frontendTechnologies = technologies.frontend;
 const backendTechnologies = technologies.backend;
@@ -16,7 +19,7 @@ const otherTechnologies = technologies.others;
 
   <div class="about-page w-[90%] m-auto">
     <div class="about-me mt-20">
-      <h2 class="text-xl md:text-2xl font-bold text-center">About me</h2>
+      <h2 class="text-2xl md:text-3xl font-bold text-center pt-5">About me</h2>
       <p class="p-4">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci optio,
         autem doloribus culpa eveniet ab, quis illum error magni quisquam vitae
@@ -28,33 +31,44 @@ const otherTechnologies = technologies.others;
       </p>
     </div>
 
-    <h2 class="text-xl md:text-2xl font-bold text-center">Used Technologies</h2>
-    <div class="technologies-used grid grid-cols-1 md:grid-cols-2 gap-4 p-4">
+    <h2 class="text-2xl md:text-3xl font-bold text-center mt-7 mb-4">
+      Used Technologies
+    </h2>
+    <div
+      class="technologies-used grid grid-cols-1 md:grid-cols-2 gap-4 p-4 mb-5"
+    >
       <TechnologyCard title="Frontend" technologies={frontendTechnologies} />
       <TechnologyCard title="Backend" technologies={backendTechnologies} />
       <TechnologyCard title="DevOps" technologies={devopsTechnologies} />
       <TechnologyCard title="Other" technologies={otherTechnologies} />
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 p-4">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 p-4 mb-10">
       <div>
-        <h3 class="text-lg md:text-xl font-bold text-center">My education</h3>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente
-          eligendi nam, consequatur eius quos voluptatem harum odio. Et, aut
-          iste inventore quo, quod iusto eligendi ullam doloribus optio
-          reiciendis vel?
-        </p>
+        <h3 class="text-xl md:text-2xl font-bold text-center">Education</h3>
+
+        <EducationAndExperienceCard
+          institutionImg={thomasMoreImg.src}
+          institutionName="Thomas More"
+          program="Application Development"
+          degree="Professional Bachelors"
+          startDate="2022"
+          endDate="2025"
+          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci optio, lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci optio, autem doloribus culpa eveniet ab, quis illum error magni quisquam vitae nobis deserunt esse. Dolores aliquid amet doloremque ratione quibusdam. lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci optio, autem doloribus culpa eveniet ab, quis illum error magni quisquam vitae nobis deserunt esse. Dolores aliquid amet doloremque ratione quibusdam."
+        />
       </div>
 
       <div>
-        <h3 class="text-lg md:text-xl font-bold text-center">My experience</h3>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente
-          eligendi nam, consequatur eius quos voluptatem harum odio. Et, aut
-          iste inventore quo, quod iusto eligendi ullam doloribus optio
-          reiciendis vel?
-        </p>
+        <h3 class="text-xl md:text-2xl font-bold text-center">Experience</h3>
+
+        <EducationAndExperienceCard
+          institutionImg={avandeIcon.src}
+          institutionName="Avanade"
+          program="Software Engineer Intern"
+          startDate="February 2025"
+          endDate="June 2025"
+          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci optio, lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci optio, autem doloribus culpa eveniet ab, quis illum error magni quisquam vitae nobis deserunt esse. Dolores aliquid amet doloremque ratione quibusdam. lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci optio, autem doloribus culpa eveniet ab, quis illum error magni quisquam vitae nobis deserunt esse. Dolores aliquid amet doloremque ratione quibusdam."
+        />
       </div>
     </div>
   </div>
