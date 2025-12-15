@@ -1,5 +1,58 @@
 # Changelog
 
+## [1.4.0](https://github.com/fax-spittah/My-Portfolio-Website/compare/v1.3.0...v1.4.0) (2025-12-15)
+
+
+### Features
+
+* about page layout ([bedb3e4](https://github.com/fax-spittah/My-Portfolio-Website/commit/bedb3e447f70a6582b7375645f77e0552391cefe))
+* about section of the homepage ([13a0786](https://github.com/fax-spittah/My-Portfolio-Website/commit/13a07866d11ee4c39b430bd4892f179fe674a41b))
+* add profile section with dynamic picture and social icons to home page ([5f7d01d](https://github.com/fax-spittah/My-Portfolio-Website/commit/5f7d01d34b02190d46ba97e1e8adfc81f8aaf5e6))
+* adding a card to display the projects of the home page ([ae63583](https://github.com/fax-spittah/My-Portfolio-Website/commit/ae63583e82f4111373f4e206c169d7a7370663b9))
+* adding devops icons ([b120bab](https://github.com/fax-spittah/My-Portfolio-Website/commit/b120bab9e80842a8c7052d0f62e795f6793dafe6))
+* adding education component ([96cf20a](https://github.com/fax-spittah/My-Portfolio-Website/commit/96cf20a09e2e545f85313c168d5fdc4c20ed2ed7))
+* adding icon ([6b49840](https://github.com/fax-spittah/My-Portfolio-Website/commit/6b49840f0f12789d12c954511861e3b028cb561a))
+* adding some more icons to the about page ([d025115](https://github.com/fax-spittah/My-Portfolio-Website/commit/d025115d53e06d39041aff874f85502b2f439256))
+* basic welcome page layout ([0a32870](https://github.com/fax-spittah/My-Portfolio-Website/commit/0a32870f4e4541ff144fc7b863d4bd96bedde85b))
+* creating the blueprints for the about page ([eed088b](https://github.com/fax-spittah/My-Portfolio-Website/commit/eed088b15c4fe0d2e526cd07f309b5e15e7c7aaa))
+* creating the education component ([4e1f29a](https://github.com/fax-spittah/My-Portfolio-Website/commit/4e1f29a3c0f505ace94150ca8c61fb7987f1ddc1))
+* enhance header styling and add profile section with social media icons ([8fd8fad](https://github.com/fax-spittah/My-Portfolio-Website/commit/8fd8fadd4998c6d109cee3d6e9fea8c1af65c976))
+* first look of the me section of the page ([22fa342](https://github.com/fax-spittah/My-Portfolio-Website/commit/22fa342c71a3573481f5df04d495abff992f22dc))
+* further customizing the about page and adding new technologies along with their icons ([18d4730](https://github.com/fax-spittah/My-Portfolio-Website/commit/18d47307ba0655961ae0cd38d81b27a5d342ded4))
+* grouping the techs into cards ([353f1bb](https://github.com/fax-spittah/My-Portfolio-Website/commit/353f1bb7de777d79b41e2231ebe2a2e99f123796))
+* modifying about page ([982f69f](https://github.com/fax-spittah/My-Portfolio-Website/commit/982f69f9a1fe38bf95e941036453a40fee9bd876))
+* modifying welcome page ([9accf7f](https://github.com/fax-spittah/My-Portfolio-Website/commit/9accf7f0ea44520afde2849b9cd9adab3b6e23a4))
+* organizing the page in a basic layout structure ([4623ea6](https://github.com/fax-spittah/My-Portfolio-Website/commit/4623ea68bbd036d381d8b9bb72a49951c0110c42))
+* other technologies ([3be3c3b](https://github.com/fax-spittah/My-Portfolio-Website/commit/3be3c3b7681f06fd144aaf3c08e3e422119021e1))
+* refactoring the .json data file structure and adding some external links ([11bf608](https://github.com/fax-spittah/My-Portfolio-Website/commit/11bf608e9caea9194a7db09bd554afed44e0f431))
+* structuring the technologies in grid format ([ca524ba](https://github.com/fax-spittah/My-Portfolio-Website/commit/ca524bae80461f6fb6caa63d102b07d1cd6431bb))
+
+
+### Bug Fixes
+
+* adapting the card to be usable both in the case of education as that of experience ([f084100](https://github.com/fax-spittah/My-Portfolio-Website/commit/f0841002ffbc0c7a3b9c2f168bd09cf00f7f6b8a))
+* adding some marging to the top of the about page ([e4ddaec](https://github.com/fax-spittah/My-Portfolio-Website/commit/e4ddaec2d409df1cba213f3fa895c3e4d950e2c7))
+* better modified cards concerning the education and experience ([25add5e](https://github.com/fax-spittah/My-Portfolio-Website/commit/25add5eb59697dd3445fde5876222963e6311ea4))
+* changing placeholder logos on about page ([a811d6b](https://github.com/fax-spittah/My-Portfolio-Website/commit/a811d6b89300e1510ba00b21e115e8186172227f))
+* changing some of the svgs ([4a95817](https://github.com/fax-spittah/My-Portfolio-Website/commit/4a95817afc70a08b7e4fd6a68abe39481e90c75a))
+* enhance footer styles and add margin to education section ([68557f7](https://github.com/fax-spittah/My-Portfolio-Website/commit/68557f741d604ad7a7bd9788f9b46560e563a6d2))
+* fixing grid col for the projects ([0dc0813](https://github.com/fax-spittah/My-Portfolio-Website/commit/0dc0813997a4d6798cc3e9dcbb655fff68fd925f))
+* fixing page size ([35acb72](https://github.com/fax-spittah/My-Portfolio-Website/commit/35acb727077e7912d3f4af92659e5ce58dd8d6d9))
+* fixing some bugs ([96f0b1e](https://github.com/fax-spittah/My-Portfolio-Website/commit/96f0b1e027292918edbf9033bdd2337258de3358))
+* fixing the burgermenu tranparency ([4610acf](https://github.com/fax-spittah/My-Portfolio-Website/commit/4610acf94b8e66aaf1db524f8c2a29e2ff49f64e))
+* fixing the burgermenu tranparency ([10c87e2](https://github.com/fax-spittah/My-Portfolio-Website/commit/10c87e262d3905ddafa7167a9d371fe81797cd16))
+* fixing the display of some icons ([4e47d82](https://github.com/fax-spittah/My-Portfolio-Website/commit/4e47d825fe7cc34f2e3e2ad4d3c3f4b117ae4a6d))
+* fixing the hovering problem on the mobile navigation menu ([e03af0d](https://github.com/fax-spittah/My-Portfolio-Website/commit/e03af0d95deb8de88a3cbc38793e9e2bf1f2c19d))
+* fixing unnecessary marging on the top of the cv page ([2274c98](https://github.com/fax-spittah/My-Portfolio-Website/commit/2274c981d6900b9055375df04987e17a7609a09d))
+* fixing unnecessary marging on the top of the cv page ([ef6bc76](https://github.com/fax-spittah/My-Portfolio-Website/commit/ef6bc76d8d1b668bc9000ebb55a713ee2e01c1d8))
+* fixing up the footer section ([7d6917b](https://github.com/fax-spittah/My-Portfolio-Website/commit/7d6917b06e88bd9c1bae34eb13abf5d890e785bc))
+* rearraging sections ([d15bdbf](https://github.com/fax-spittah/My-Portfolio-Website/commit/d15bdbf23a937a605769707c44b50579b3dce587))
+* saving techs in db and iterating through them ([fed2307](https://github.com/fax-spittah/My-Portfolio-Website/commit/fed230738f0eb8b273f020df565ee7c5f06a8d37))
+* spicing up the cards containing various technologies ([266d40e](https://github.com/fax-spittah/My-Portfolio-Website/commit/266d40e0b10b2e364e28f3cefc2bbea7b3a99e18))
+* updated dependencies and modified header and project card ([1e778d8](https://github.com/fax-spittah/My-Portfolio-Website/commit/1e778d8ebc6eee34ea3c5ba0eb400838f2021b6b))
+* updated footer with some styles ([9f9b634](https://github.com/fax-spittah/My-Portfolio-Website/commit/9f9b6341152ab3939af053c9a8b0324737767f1d))
+* updating about page ([bc0486a](https://github.com/fax-spittah/My-Portfolio-Website/commit/bc0486ac85953f71ea91410ee634e04c1b162807))
+
 ## [1.3.0](https://github.com/fax-spittah/My-Portfolio-Website/compare/v1.2.0...v1.3.0) (2025-10-29)
 
 
