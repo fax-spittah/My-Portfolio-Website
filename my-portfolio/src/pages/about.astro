@@ -5,7 +5,8 @@ import Layout from "../layouts/Layout.astro";
 import technologies from "../data/technologies.json";
 import TechnologyCard from "../components/about/TechnologyCard.astro";
 import EducationAndExperienceCard from "../components/about/EducationAndExperienceCard.astro";
-import img from "../icons/calendar.svg";
+import thomasMoreImg from "../icons/thomasMoreLogo.svg";
+import avandeIcon from "../icons/avanadeLogo.svg";
 
 const frontendTechnologies = technologies.frontend;
 const backendTechnologies = technologies.backend;
@@ -43,7 +44,7 @@ const otherTechnologies = technologies.others;
         <h3 class="text-lg md:text-xl font-bold text-center">My education</h3>
 
         <EducationAndExperienceCard
-          institutionImg={img.src}
+          institutionImg={thomasMoreImg.src}
           institutionName="Thomas More"
           program="Application Development"
           degree="Professional Bachelors"
@@ -57,7 +58,7 @@ const otherTechnologies = technologies.others;
         <h3 class="text-lg md:text-xl font-bold text-center">My experience</h3>
 
         <EducationAndExperienceCard
-          institutionImg={img.src}
+          institutionImg={avandeIcon.src}
           institutionName="Avanade"
           program="Software Engineer Intern"
           startDate="February 2025"
