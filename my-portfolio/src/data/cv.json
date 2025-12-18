@@ -2,7 +2,7 @@
   "cvHeader": {
     "fullNameAllCaps": "EDISON NYINGCHUO KISEH",
     "title": "Full Stack Developer",
-    "shortDescription": "Passionate full stack developer with experience building modern web applications using JavaScript, TypeScript, Angular, React, and Node.js. Dedicated to writing clean, efficient code and continuously learning new technologies."
+    "shortDescription": "Junior Full Stack Developer with hands-on experience building production-ready web applications using React, Angular, TypeScript, and C# .NET. Completed a full-stack internship at Avanade, working on a real-time Azure-hosted support platform. Proficient in Front and Back-end development, Agile teamwork, and clean code practices. Actively seeking a graduate/junior software engineering role with relocation or visa sponsorship."
   },
 
   "cvLeftSide": {
@@ -71,7 +71,9 @@
         "responsibilities": [
           "Developed a real-time support chat platform with React & Next.js for the frontend, and C# .NET for the backend, hosted on Azure.",
           "Integrated Azure Communication Services to enable duplex messaging and multi-agent support.",
-          "Collaborated in Agile teams, improving sprint delivery efficiency."
+          "Collaborated in Agile teams, improving sprint delivery efficiency.",
+          "Mentored by senior developers, enhancing coding skills and industry knowledge.",
+          "Developed a resuable component library using Rollup.js to encourage code reusability across the differents parts of the system."
         ]
       }
     ],
