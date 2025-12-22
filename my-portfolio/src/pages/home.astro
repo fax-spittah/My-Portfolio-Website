@@ -7,7 +7,6 @@ import ProjectCard from "../components/ProjectCard.astro";
 import profileImage from "../assets/my-pic.jpg";
 import SocialMediaIcons from "../components/SocialMediaIcons.astro";
 import data from "../data/general.json";
-import bgImage from "../assets/home-bg.jpg";
 
 import cvData from "../data/cv.json";
 
@@ -23,22 +22,20 @@ const projects = cvData.cvMainSide.projects;
   <Header />
   <title>Home</title>
 
-  <section
-    class="min-h-screen bg-center bg-cover flex items-center justify-center relative overflow-hidden"
-    style={`background-image: url(${bgImage.src});`}
-  >
-    <div class="absolute inset-0 bg-black/40"></div>
-    <div class="text-center p-4 relative z-10">
+  <section class="min-h-screen flex items-center justify-center">
+    <div class="text-center p-4">
       <img
         src={profileImage.src}
         alt="Profile Picture"
-        class="w-40 h-40 lg:w-50 lg:h-50 rounded-full mx-auto mb-6 md:mb-0 md:mt-10 object-cover border-2 border-white shadow-2xl transition-transform duration-300 hover:scale-105"
+        class="w-40 h-40 lg:w-50 lg:h-50 rounded-full mx-auto mb-6 md:mb-0 md:mt-10 object-cover border-2 border-gray-900 dark:border-white shadow-2xl transition-transform duration-300 hover:scale-105"
       />
-      <h1 class="text-2xl lg:text-5xl font-bold text-white mt-8 drop-shadow-lg">
+      <h1
+        class="text-2xl lg:text-5xl font-bold text-gray-900 dark:text-white mt-8"
+      >
         EDISON KISEH
       </h1>
       <p
-        class="mt-6 text-xl lg:text-2xl text-gray-100 font-medium drop-shadow-lg"
+        class="mt-6 text-xl lg:text-2xl text-gray-700 dark:text-gray-100 font-medium"
       >
         Full Stack Developer
       </p>
@@ -67,15 +64,17 @@ const projects = cvData.cvMainSide.projects;
   <div class="px-6 md:px-12 py-16">
     <div class="max-w-4xl mx-auto">
       <h2
-        class="text-4xl md:text-5xl text-center font-bold mb-10 mt-4 text-gray-900"
+        class="text-4xl md:text-5xl text-center font-bold mb-10 mt-4 text-gray-900 dark:text-white"
       >
         About Me
       </h2>
       <p class="text-2xl text-center font-semibold text-blue-600 mb-4">
         Hey there! 👋
       </p>
-      <p class="text-lg text-gray-700 leading-relaxed text-center">
-        My name is <span class="font-semibold text-gray-900"
+      <p
+        class="text-lg text-gray-700 dark:text-gray-300 leading-relaxed text-center"
+      >
+        My name is <span class="font-semibold text-gray-900 dark:text-gray-300"
           >Edison Nyingchuo Kiseh</span
         >, and I'm a Cameroonian living in Belgium. I'm passionate about coding,
         sports, and music. Feel free to explore the rest of this site to learn
@@ -85,7 +84,7 @@ const projects = cvData.cvMainSide.projects;
         <a href="/about">
           <button
             type="button"
-            class="text-white bg-blue-600 hover:bg-blue-700 active:scale-95 font-semibold py-3 px-8 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl"
+            class="text-white bg-blue-600 hover:bg-blue-700 dark:bg-blue-700 dark:hover:bg-blue-800 active:scale-95 font-semibold py-3 px-8 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl"
             >Read More</button
           >
         </a>
@@ -93,10 +92,10 @@ const projects = cvData.cvMainSide.projects;
     </div>
 
     <div
-      class="mt-16 pt-12 pb-12 bg-gradient-to-br from-gray-50 to-white rounded-xl shadow-sm"
+      class="mt-16 pt-12 pb-12 bg-gradient-to-br from-gray-50 to-white dark:from-gray-800 dark:to-gray-900 rounded-xl shadow-sm"
     >
       <h2
-        class="text-4xl md:text-5xl text-center font-bold mb-12 text-gray-900"
+        class="text-4xl md:text-5xl text-center font-bold mb-12 text-gray-900 dark:text-white"
       >
         Featured Projects
       </h2>
@@ -114,5 +113,6 @@ const projects = cvData.cvMainSide.projects;
       </div>
     </div>
   </div>
+
   <Footer />
 </Layout>

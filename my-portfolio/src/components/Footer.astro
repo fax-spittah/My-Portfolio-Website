@@ -7,7 +7,7 @@ const discord = data.contactInformation.discord;
 ---
 
 <footer
-  class="bg-gradient-to-br from-slate-50 to-gray-100 text-gray-900 border-t border-gray-200"
+  class="bg-gradient-to-br from-slate-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 text-gray-900 dark:text-white border-t border-gray-200 dark:border-gray-700"
 >
   <div
     class="footer-sections flex flex-col md:flex-row w-full justify-between align-left mb-8 px-6 md:px-12 pt-12"
@@ -19,21 +19,21 @@ const discord = data.contactInformation.discord;
       <p class="mb-2">
         <a
           href={linkedInURL}
-          class="text-gray-700 hover:text-blue-600 transition-colors duration-300 font-medium"
+          class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300 font-medium"
           >LinkedIn</a
         >
       </p>
       <p class="mb-2">
         <a
           href=`mailto: ${email}`
-          class="text-gray-700 hover:text-blue-600 transition-colors duration-300 font-medium"
+          class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300 font-medium"
           >Email</a
         >
       </p>
       <p>
         <a
           href={discord}
-          class="text-gray-700 hover:text-blue-600 transition-colors duration-300 font-medium"
+          class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300 font-medium"
           >Discord</a
         >
       </p>
@@ -46,25 +46,27 @@ const discord = data.contactInformation.discord;
       <nav class="footer-nav flex flex-col">
         <a
           href="/"
-          class="text-gray-700 hover:text-blue-600 transition-colors duration-300 mb-2 font-medium"
+          class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300 mb-2 font-medium"
           >Home</a
         >
         <a
           href="/about"
-          class="text-gray-700 hover:text-blue-600 transition-colors duration-300 mb-2 font-medium"
+          class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300 mb-2 font-medium"
           >About</a
         >
         <a
           href="/cv"
-          class="text-gray-700 hover:text-blue-600 transition-colors duration-300 font-medium"
+          class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300 font-medium"
           >CV</a
         >
       </nav>
     </div>
   </div>
 
-  <div class="border-t border-gray-300"></div>
-  <p class="footer-text mt-6 text-sm text-gray-600 px-6 md:px-12 pb-6">
+  <div class="border-t border-gray-300 dark:border-gray-600"></div>
+  <p
+    class="footer-text mt-6 text-sm text-gray-600 dark:text-gray-400 px-6 md:px-12 pb-6"
+  >
     © {new Date().getFullYear()} Edison N. Kiseh. All rights reserved.
   </p>
 </footer>
