@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.4.1](https://github.com/fax-spittah/My-Portfolio-Website/compare/v1.4.0...v1.4.1) (2025-12-22)
+
+
+### Bug Fixes
+
+* modifying cv content ([0539714](https://github.com/fax-spittah/My-Portfolio-Website/commit/0539714410bb82b3c85332b6b0142b7e9b31ca97))
+* modifying cv content ([32747ed](https://github.com/fax-spittah/My-Portfolio-Website/commit/32747edb1d1143c7f4d331d1176be2ff00994abd))
+
 ## [1.4.0](https://github.com/fax-spittah/My-Portfolio-Website/compare/v1.3.0...v1.4.0) (2025-12-15)
 
 
