@@ -3,11 +3,25 @@ import { Icon } from "astro-icon/components";
 ---
 
 <div>
-  <ul class="flex flex-col space-y-6 pt-6 w-full h-screen z-50">
-    <a href="/home" class="text-lg"> <li>Home</li></a>
-    <a href="/about" class="text-lg"> <li>About</li></a>
-    <a href="/cv" class="text-lg"> <li>CV</li></a>
-    <hr class="text-gray-300" />
+  <ul
+    class="flex flex-col space-y-6 pt-6 w-full h-screen z-50 bg-white dark:bg-black text-gray-900 dark:text-white"
+  >
+    <a
+      href="/home"
+      class="text-lg hover:text-blue-600 dark:hover:text-blue-400"
+    >
+      <li>Home</li></a
+    >
+    <a
+      href="/about"
+      class="text-lg hover:text-blue-600 dark:hover:text-blue-400"
+    >
+      <li>About</li></a
+    >
+    <a href="/cv" class="text-lg hover:text-blue-600 dark:hover:text-blue-400">
+      <li>CV</li></a
+    >
+    <hr class="text-gray-300 dark:text-gray-600" />
     <li>
       <button
         class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center w-full"
