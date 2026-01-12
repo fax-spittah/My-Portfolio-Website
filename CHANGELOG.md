@@ -1,5 +1,26 @@
 # Changelog
 
+## [1.5.0](https://github.com/fax-spittah/My-Portfolio-Website/compare/v1.4.0...v1.5.0) (2026-01-12)
+
+
+### Features
+
+* introducing auto darkmode to the layout and home page ([614d94d](https://github.com/fax-spittah/My-Portfolio-Website/commit/614d94d4580c52f47e05915c0d5ce1bfd3c56bb5))
+
+
+### Bug Fixes
+
+* enhance dark mode support across CV components and update printer icon ([1850700](https://github.com/fax-spittah/My-Portfolio-Website/commit/18507000372c6761ffc4d47fe62ab20019eca2cd))
+* fixed dark mode on the home page ([47b1aa6](https://github.com/fax-spittah/My-Portfolio-Website/commit/47b1aa65be98233877fe1821c998208e78b3bff0))
+* fixed darkmode on about page ([a8c4b1a](https://github.com/fax-spittah/My-Portfolio-Website/commit/a8c4b1a7c5a7f445d3a4004f0db8f52fdb248b6b))
+* fixing issues with dark mode ([311a7da](https://github.com/fax-spittah/My-Portfolio-Website/commit/311a7dab4d9ae2a6edbb19c28e540449bc652951))
+* fixing typo in cv ([d6d48bf](https://github.com/fax-spittah/My-Portfolio-Website/commit/d6d48bf26ba53191169153057387fa08f256b5db))
+* fixing typo in cv ([dcbef89](https://github.com/fax-spittah/My-Portfolio-Website/commit/dcbef8979e32539cc225157295e9d3dda1553e9d))
+* fixing up the components to adapt to dark mode ([284b989](https://github.com/fax-spittah/My-Portfolio-Website/commit/284b989fc1f71039e5f03dd67595cbd44c8c16a4))
+* modifying cv content ([0539714](https://github.com/fax-spittah/My-Portfolio-Website/commit/0539714410bb82b3c85332b6b0142b7e9b31ca97))
+* modifying cv content ([32747ed](https://github.com/fax-spittah/My-Portfolio-Website/commit/32747edb1d1143c7f4d331d1176be2ff00994abd))
+* tweaking some text in the cv ([9b27e61](https://github.com/fax-spittah/My-Portfolio-Website/commit/9b27e61b97376a57f86461b7ac2beaadcfe48229))
+
 ## [1.4.0](https://github.com/fax-spittah/My-Portfolio-Website/compare/v1.3.0...v1.4.0) (2025-12-15)
 
 
