@@ -43,14 +43,16 @@ const otherExperiences = cvData.cvMainSide.otherExperience;
           ))
         }
 
-        <p class="md:text-lg sm:text-base font-semibold">
+        <p
+          class="md:text-lg sm:text-base font-semibold text-gray-900 dark:text-white"
+        >
           Other Work Experience
         </p>
-        <p class="text-sm text-gray-700">
+        <p class="text-sm text-gray-700 dark:text-gray-300">
           <i>Student Jobs</i>
         </p>
 
-        <ul class="list-disc ml-5 text-sm">
+        <ul class="list-disc ml-5 text-sm text-gray-700 dark:text-white">
           {otherExperiences.map((job) => <li>{job}</li>)}
         </ul>
       </div>

@@ -7,7 +7,7 @@ interface Props {
 const { language, level }: Props = Astro.props;
 ---
 
-<p class="flex justify-between">
+<p class="flex justify-between text-gray-700 dark:text-gray-300">
   <b class="text-sm">{language}</b>
   <span class="text-sm"><i>{level}</i></span>
 </p>

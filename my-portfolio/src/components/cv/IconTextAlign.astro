@@ -17,7 +17,7 @@ const { iconName, text, section, link }: Props = Astro.props;
       <>
         <>
           <Icon name={iconName} class="w-5 h-5 md:w-6 md:h-6 mb-[0.2rem]" />
-          <span class="ml-[0.8rem] md:text-lg sm:text-base font-bold mb-[0.3rem]">
+          <span class="ml-[0.8rem] md:text-lg sm:text-base font-bold mb-[0.3rem] text-gray-900 dark:text-white">
             {text}
           </span>
         </>
@@ -25,8 +25,8 @@ const { iconName, text, section, link }: Props = Astro.props;
     ) : section === "contact" ? (
       <>
         <>
-          <Icon name={iconName} class="text-[#262626]" />
-          <span class="ml-[0.8rem] text-sm mt-[0.2rem]">
+          <Icon name={iconName} class="text-[#262626] dark:text-gray-300" />
+          <span class="ml-[0.8rem] text-sm mt-[0.2rem] text-gray-800 dark:text-gray-200">
             <a href={link} target="_blank">
               {text}
             </a>
@@ -36,8 +36,10 @@ const { iconName, text, section, link }: Props = Astro.props;
     ) : (
       <>
         <>
-          <Icon name={iconName} class="text-gray-500" />
-          <span class="ml-[0.3rem] text-sm">{text}</span>
+          <Icon name={iconName} class="text-gray-500 dark:text-gray-400" />
+          <span class="ml-[0.3rem] text-sm text-gray-700 dark:text-gray-300">
+            {text}
+          </span>
         </>
       </>
     )

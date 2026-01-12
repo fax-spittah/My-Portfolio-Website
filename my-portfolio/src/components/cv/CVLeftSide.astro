@@ -18,10 +18,12 @@ const spokenLanguages = cvData.cvLeftSide.skills.spokenLanguages;
 ---
 
 <div
-  class="left-side-container flex flex-col gap-4 p-5 md:w-[30%] md:max-w-[30%] bg-[#d9d9d9] print:bg-white"
+  class="left-side-container flex flex-col gap-4 p-5 md:w-[30%] md:max-w-[30%] bg-[#d9d9d9] dark:bg-gray-800 print:bg-white"
 >
   <div>
-    <h2 class="md:text-lg sm:text-base font-bold">CONTACT</h2>
+    <h2 class="md:text-lg sm:text-base font-bold text-gray-900 dark:text-white">
+      CONTACT
+    </h2>
     <hr />
     <IconTextAlign iconName="home" text={location} section="contact" />
     <IconTextAlign iconName="phone" text={phone} section="contact" />
@@ -41,11 +43,13 @@ const spokenLanguages = cvData.cvLeftSide.skills.spokenLanguages;
   </div>
 
   <div>
-    <h2 class="md:text-lg sm:text-base font-bold">SKILLS</h2>
+    <h2 class="md:text-lg sm:text-base font-bold text-gray-900 dark:text-white">
+      SKILLS
+    </h2>
     <hr />
     <div class="flex flex-col gap-2">
       <div>
-        <p class="md:text-base sm:text-sm text-gray-800">
+        <p class="md:text-base sm:text-sm text-gray-800 dark:text-gray-200">
           <i>Programming Languages</i>
         </p>
         {
@@ -58,7 +62,7 @@ const spokenLanguages = cvData.cvLeftSide.skills.spokenLanguages;
         }
       </div>
       <div>
-        <p class="md:text-base sm:text-sm text-gray-800">
+        <p class="md:text-base sm:text-sm text-gray-800 dark:text-gray-200">
           <i>Frameworks & Libraries</i>
         </p>
         {
@@ -71,7 +75,9 @@ const spokenLanguages = cvData.cvLeftSide.skills.spokenLanguages;
         }
       </div>
       <div>
-        <p class="md:text-base sm:text-sm text-gray-800"><i>Tools</i></p>
+        <p class="md:text-base sm:text-sm text-gray-800 dark:text-gray-200">
+          <i>Tools</i>
+        </p>
         {
           toolsAndPlatforms?.map((tool) => (
             <TextAndLevelFormat language={tool.name} level={tool.proficiency} />
@@ -79,13 +85,17 @@ const spokenLanguages = cvData.cvLeftSide.skills.spokenLanguages;
         }
       </div>
       <div>
-        <p class="md:text-base sm:text-sm text-gray-800"><i>Soft skills</i></p>
+        <p class="md:text-base sm:text-sm text-gray-800 dark:text-gray-200">
+          <i>Soft skills</i>
+        </p>
         <p class="text-sm">
           {softSkills.join(", ")}
         </p>
       </div>
       <div>
-        <p class="md:text-base sm:text-sm text-gray-800"><i>Languages</i></p>
+        <p class="md:text-base sm:text-sm text-gray-800 dark:text-gray-200">
+          <i>Languages</i>
+        </p>
         {
           spokenLanguages?.map((language) => (
             <TextAndLevelFormat
