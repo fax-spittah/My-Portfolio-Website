@@ -15,7 +15,9 @@
         { "name": "HTML/CSS", "proficiency": "Advanced" },
         { "name": "SQL", "proficiency": "Advanced" },
         { "name": "PHP", "proficiency": "Intermediate" },
-        { "name": "JavaScript", "proficiency": "Intermediate" }
+        { "name": "JavaScript", "proficiency": "Intermediate" },
+        { "name": "TypeScript", "proficiency": "Advanced" },
+        { "name": "Kotlin", "proficiency": "Intermediate" }
       ],
 
       "frameworksAndLibraries": [

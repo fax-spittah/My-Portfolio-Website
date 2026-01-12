@@ -16,15 +16,19 @@ import Footer from "../components/Footer.astro";
     <!-- To manually create space -->
   </div>
 
-  <div class="flex justify-end w-full mb-2 print-hide mt-3 pr-2 md:pr-3">
+  <div
+    class="flex justify-end w-full mb-2 print-hide mt-3 pr-2 md:pr-3 bg-white dark:bg-black"
+  >
     <Icon
       name="printer"
       onclick="window.print()"
-      class="w-5 h-5 md:w-7 md:h-7 cursor-pointer hover:text-gray-700 transition"
+      class="w-5 h-5 md:w-7 md:h-7 cursor-pointer text-gray-700 dark:text-gray-200 hover:text-gray-900 dark:hover:text-gray-300 transition"
       style="display: block;"
     />
   </div>
-  <div class="cv-container w-full max-w-4xl mx-auto mb-4 shadow-xl bg-white">
+  <div
+    class="cv-container w-full max-w-4xl mx-auto mb-4 shadow-xl bg-white dark:bg-gray-900"
+  >
     <CVHeader />
     <div class="cv-body md:flex md:flex-row md:justify-between">
       <CVLeftSide />
