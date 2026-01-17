@@ -24,6 +24,7 @@ import { Icon } from "astro-icon/components";
     <hr class="text-gray-300 dark:text-gray-600" />
     <li>
       <button
+        id="theme-selector-mobile"
         class="bg-gradient-to-r from-blue-500 to-blue-600 dark:bg-gradient-to-r dark:from-gray-300 dark:to-gray-400 hover:from-blue-600 hover:to-blue-700 dark:hover:from-gray-400 dark:hover:to-gray-500 text-white font-bold py-2 px-4 rounded inline-flex items-center w-full"
       >
         <Icon name="sun" class="w-full h-6 dark:hidden" />
@@ -32,3 +33,17 @@ import { Icon } from "astro-icon/components";
     </li>
   </ul>
 </div>
+
+<script>
+  document
+    .getElementById("theme-selector-mobile")
+    ?.addEventListener("click", () => {
+      if (localStorage.theme === "dark") {
+        localStorage.theme = "light";
+        document.documentElement.classList.remove("dark");
+      } else {
+        localStorage.theme = "dark";
+        document.documentElement.classList.add("dark");
+      }
+    });
+</script>
