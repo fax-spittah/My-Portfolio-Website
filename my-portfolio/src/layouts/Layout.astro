@@ -13,8 +13,20 @@ const shortName = data.shortName;
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>{shortName}</title>
-    <script src="https://unpkg.com/alpinejs" defer></script></head
-  >
+    <script src="https://unpkg.com/alpinejs" defer></script>
+
+    <script>
+      if (
+        localStorage.theme === "dark" ||
+        (!("theme" in localStorage) &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches)
+      ) {
+        document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.remove("dark");
+      }
+    </script>
+  </head>
 
   <body class="bg-white dark:bg-black text-black dark:text-white">
     <slot />

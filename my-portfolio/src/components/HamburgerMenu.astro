@@ -24,9 +24,10 @@ import { Icon } from "astro-icon/components";
     <hr class="text-gray-300 dark:text-gray-600" />
     <li>
       <button
-        class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center w-full"
+        class="bg-gradient-to-r from-blue-500 to-blue-600 dark:bg-gradient-to-r dark:from-gray-300 dark:to-gray-400 hover:from-blue-600 hover:to-blue-700 dark:hover:from-gray-400 dark:hover:to-gray-500 text-white font-bold py-2 px-4 rounded inline-flex items-center w-full"
       >
-        <Icon name="sun" class="w-full h-6" />
+        <Icon name="sun" class="w-full h-6 dark:hidden" />
+        <Icon name="moon" class="w-full h-6 hidden dark:inline font-bold" />
       </button>
     </li>
   </ul>
