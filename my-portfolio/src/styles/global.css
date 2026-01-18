@@ -8,3 +8,7 @@ body {
   height: 100%;
   scroll-behavior: smooth;
 }
+
+[x-cloak] {
+  display: none !important;
+}
