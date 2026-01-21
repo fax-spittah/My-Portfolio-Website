@@ -93,6 +93,7 @@ const projects = cvData.cvMainSide.projects;
 
     <div class="mt-16 pt-12 pb-12">
       <h2
+        id="projects"
         class="text-4xl md:text-5xl text-center font-bold mb-12 text-gray-900 dark:text-white"
       >
         Featured Projects
@@ -103,6 +104,7 @@ const projects = cvData.cvMainSide.projects;
         {
           projects.map((project) => (
             <ProjectCard
+              projectIcon={project.icon}
               projectTitle={project.projectName}
               projectDescription={project.description}
             />

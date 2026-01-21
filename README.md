@@ -8,6 +8,8 @@ The site itself is treated as a production-ready project, focusing on good UI/UX
 
 ## ![alt text](./my-portfolio/src/assets/website-image.png)
 
+_Click [here](https://eddsn.netlify.app/) to access site_
+
 ## 🚀 Features
 
 - Responsive design – works seamlessly across desktop, tablet, and mobile

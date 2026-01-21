@@ -21,7 +21,7 @@
       ],
 
       "frameworksAndLibraries": [
-        { "name": "React", "proficiency": "Intermediate" },
+        { "name": "React", "proficiency": "Advanced" },
         { "name": "Angular", "proficiency": "Advanced" },
         { "name": "Laravel", "proficiency": "Beginner" },
         { "name": ".NET", "proficiency": "Advanced" },
@@ -87,12 +87,14 @@
 
     "projects": [
       {
+        "icon": "customerSupport",
         "projectName": "Avanade Support Hub",
         "date": "Feb 2025 - Jun 2025",
         "description": "Developed a real-time chat platform connecting users with support agents, featuring secure duplex messaging, WebSocket-based updates, multi-agent management, and seamless integration with third-party websites.",
         "technologies": "React, Next.js, TypeScript, C# .NET, Azure Communication Services"
       },
       {
+        "icon": "write",
         "projectName": "Note Application",
         "date": "2024",
         "description": "Developed a note-taking application as a school project similar to Microsoft's OneNote app, with Angular and Firebase. It features user authentication, real-time data synchronization, and CRUD operations for notes. ",
