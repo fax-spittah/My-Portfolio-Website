@@ -7,11 +7,15 @@ import TechnologyCard from "../components/about/TechnologyCard.astro";
 import EducationAndExperienceCard from "../components/about/EducationAndExperienceCard.astro";
 import thomasMoreImg from "../icons/thomasMoreLogo.svg";
 import avandeIcon from "../icons/avanadeLogo.svg";
+import aboutData from "../data/about.json";
 
 const frontendTechnologies = technologies.frontend;
 const backendTechnologies = technologies.backend;
 const devopsTechnologies = technologies.devops;
 const otherTechnologies = technologies.others;
+const education = aboutData.about.education;
+const experience = aboutData.about.experience;
+const aboutMe = aboutData.about.aboutMe;
 ---
 
 <Layout>
@@ -24,15 +28,9 @@ const otherTechnologies = technologies.others;
       >
         About me
       </h2>
-      <p class="p-4 text-gray-700 dark:text-gray-300">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci optio,
-        autem doloribus culpa eveniet ab, quis illum error magni quisquam vitae
-        nobis deserunt esse. Dolores aliquid amet doloremque ratione quibusdam.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
-        voluptate eum magnam dolorum maiores magni, repudiandae ad ea dolor.
-        Sapiente temporibus a sit. Beatae numquam ipsa itaque tempora blanditiis
-        consequatur.
-      </p>
+      <div class="p-4 text-gray-700 dark:text-gray-300">
+        {aboutMe.map((paragraph) => <p class="mb-4">{paragraph}</p>)}
+      </div>
     </div>
 
     <h2
@@ -59,12 +57,12 @@ const otherTechnologies = technologies.others;
 
         <EducationAndExperienceCard
           institutionImg={thomasMoreImg.src}
-          institutionName="Thomas More"
-          program="Application Development"
-          degree="Professional Bachelors"
-          startDate="2022"
-          endDate="2025"
-          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci optio, lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci optio, autem doloribus culpa eveniet ab, quis illum error magni quisquam vitae nobis deserunt esse. Dolores aliquid amet doloremque ratione quibusdam. lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci optio, autem doloribus culpa eveniet ab, quis illum error magni quisquam vitae nobis deserunt esse. Dolores aliquid amet doloremque ratione quibusdam."
+          institutionName={education.institutionName}
+          program={education.program}
+          degree={education.degree}
+          startDate={education.startDate}
+          endDate={education.endDate}
+          description={education.description}
         />
       </div>
 
@@ -77,11 +75,11 @@ const otherTechnologies = technologies.others;
 
         <EducationAndExperienceCard
           institutionImg={avandeIcon.src}
-          institutionName="Avanade"
-          program="Software Engineer Intern"
-          startDate="February 2025"
-          endDate="June 2025"
-          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci optio, lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci optio, autem doloribus culpa eveniet ab, quis illum error magni quisquam vitae nobis deserunt esse. Dolores aliquid amet doloremque ratione quibusdam. lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci optio, autem doloribus culpa eveniet ab, quis illum error magni quisquam vitae nobis deserunt esse. Dolores aliquid amet doloremque ratione quibusdam."
+          institutionName={experience[0].institutionName}
+          program={experience[0].program}
+          startDate={experience[0].startDate}
+          endDate={experience[0].endDate}
+          description={experience[0].description}
         />
       </div>
     </div>

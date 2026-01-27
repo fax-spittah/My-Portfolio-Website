@@ -1,0 +1,30 @@
+{
+  "about": {
+    "aboutMe": [
+      "I am a graduate in Application Development from Thomas More De Nayer, with a strong interest in software engineering, cloud technologies, and building practical digital solutions. Throughout my studies, I developed a solid foundation in programming, system design, networking and real-world problem solving through hands-on projects.",
+      "I also gained industry experience as a Software Engineering Intern at Avanade, a global leader in Microsoft technologies. During my internship, I contributed to the development of the Avanade Support Hub (ASH), a customizable chat solution designed to improve the efficiency and responsiveness of customer support operations. This experience strengthened my technical skills while familiarizing me with professional development practices, teamwork, and modern software challenges.",
+      "Now having completed my studies, I am actively seeking opportunities as a junior software developer where I can continue to grow, contribute to impactful projects, and apply my skills in a professional environment."
+    ],
+
+    "education": {
+      "institutionImg": "../icons/thomasMoreLogo.svg",
+      "institutionName": "Thomas More",
+      "program": "Application Development",
+      "degree": "Professional Bachelors",
+      "startDate": "2022",
+      "endDate": "2025",
+      "description": "Thomas More De Nayer is a higher education institution in Belgium known for its strong focus on applied sciences and industry-relevant education. It was from here that I undertook the option of studying Application Development, where I developed a solid foundation in software engineering principles, programming, and real-world problem solving."
+    },
+
+    "experience": [
+      {
+        "institutionImg": "../icons/avanadeLogo.svg",
+        "institutionName": "Avanade",
+        "program": "Software Engineer Intern",
+        "startDate": "February 2025",
+        "endDate": "June 2025",
+        "description": "Founded in 2000 by Microsoft and Accenture, Avanade is the world's leading Microsoft expert, helping businesses unlock their full potential through cloud, AI, and digital transformation. As a Software Engineering Intern, I contributed to the development of the Avanade Support Hub (ASH), a fully integrated and customizable chat solution designed to improve the efficiency and responsiveness of customer support operations. ASH helps address common customer service challenges such as delayed response times and high volumes of inquiries by streamlining communication."
+      }
+    ]
+  }
+}
