@@ -1,5 +1,30 @@
 # Changelog
 
+## [1.6.0](https://github.com/fax-spittah/My-Portfolio-Website/compare/v1.5.0...v1.6.0) (2026-02-07)
+
+
+### Features
+
+* adding custom variant to enable dark mode switching in the app ([75426a9](https://github.com/fax-spittah/My-Portfolio-Website/commit/75426a99acfead649983e88f9137573cdfa93f40))
+* applying script in the layout to check in localStorage if the dark mode has previously been applied ([a3652dc](https://github.com/fax-spittah/My-Portfolio-Website/commit/a3652dcab319ed912228dfe18445c40f39344a13))
+* creating about data file structure and seeding it with initial … ([743ed22](https://github.com/fax-spittah/My-Portfolio-Website/commit/743ed228861dd7050ef79633c57cdff813664b4a))
+* creating about data file structure and seeding it with initial data ([e115e66](https://github.com/fax-spittah/My-Portfolio-Website/commit/e115e66aea8f0b8eca67262373150c56529639e5))
+* modifying footer content ([eb14f26](https://github.com/fax-spittah/My-Portfolio-Website/commit/eb14f2648748fb69bedc4a3ebe9f43c6297fa463))
+* modifying readme ([f68be3f](https://github.com/fax-spittah/My-Portfolio-Website/commit/f68be3fe1cb07b9be2b18e10bae6883c6ec94e62))
+* modifying README ([c01a05b](https://github.com/fax-spittah/My-Portfolio-Website/commit/c01a05babb242d90a4206fbadacb6c09802d9e34))
+
+
+### Bug Fixes
+
+* adding theme toggle to hamburger menu ([7a4eba9](https://github.com/fax-spittah/My-Portfolio-Website/commit/7a4eba93062b648bbf0019d10492be7cb097a425))
+* adding theme toggle to hamburger menu ([495c4cb](https://github.com/fax-spittah/My-Portfolio-Website/commit/495c4cb32a58c72218c958d60e8705432dc165e8))
+* correcting cv typo and aligning cv appearance ([10fdd5a](https://github.com/fax-spittah/My-Portfolio-Website/commit/10fdd5a735483778b1102b2d56a1f128ab23ae8b))
+* correcting cv typo and aligning cv appearance both in dark and light mode ([2643dd4](https://github.com/fax-spittah/My-Portfolio-Website/commit/2643dd4db5d80912f38a0bf9fb66dcfb7e6f8189))
+* fixing both darkmode and alpinejs issues ([00d439b](https://github.com/fax-spittah/My-Portfolio-Website/commit/00d439b945969eb9abf0bd622c2687aecdefb06e))
+* fixing both darkmode and alpinejs issues ([a9385da](https://github.com/fax-spittah/My-Portfolio-Website/commit/a9385dadf6875ac3d67becbbe9c972996bdf5ff0))
+* update text colors for better contrast in CV components ([7be9208](https://github.com/fax-spittah/My-Portfolio-Website/commit/7be9208d3f00d7f0500c6af1489dfa41324262cf))
+* update text colors for better contrast in CV components ([914a3fa](https://github.com/fax-spittah/My-Portfolio-Website/commit/914a3fa13f48a0da49aefa24404f10adc0c1a9e2))
+
 ## [1.5.0](https://github.com/fax-spittah/My-Portfolio-Website/compare/v1.4.0...v1.5.0) (2026-01-12)
 
 
