@@ -14,7 +14,7 @@ const otherExperiences = cvData.cvMainSide.otherExperience;
     <div>
       <IconTextAlign iconName="graduate-cap" text="EDUCATION" section="title" />
 
-      <hr />
+      <hr class="print:text-gray-900" />
       <CVItem
         name={education.name}
         date={education.date}
@@ -30,7 +30,7 @@ const otherExperiences = cvData.cvMainSide.otherExperience;
         section="title"
       />
 
-      <hr />
+      <hr class="print:text-gray-900" />
       <div class="mb-4">
         {
           professionalExperience.map((experience) => (
@@ -44,21 +44,24 @@ const otherExperiences = cvData.cvMainSide.otherExperience;
         }
 
         <p
-          class="md:text-lg sm:text-base font-semibold text-gray-900 dark:text-white"
+          class="md:text-lg sm:text-base font-semibold text-gray-900 dark:text-white print:text-gray-900"
         >
           Other Work Experience
         </p>
-        <p class="text-sm text-gray-700 dark:text-gray-300">
+        <p class="text-sm text-gray-700 dark:text-gray-300 print:text-gray-700">
           <i>Student Jobs</i>
         </p>
 
-        <ul class="list-disc ml-5 text-sm text-gray-900 dark:text-white">
+        <ul
+          class="list-disc ml-5 text-sm text-gray-900 dark:text-white print:text-gray-900"
+        >
           {otherExperiences.map((job) => <li>{job}</li>)}
         </ul>
       </div>
       <div>
         <IconTextAlign iconName="tool" text="PROJECTS" section="title" />
-        <hr />
+
+        <hr class="print:text-gray-900" />
       </div>
       <div class="flex flex-col gap-4">
         {
