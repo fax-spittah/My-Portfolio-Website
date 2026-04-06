@@ -100,7 +100,8 @@
         "projectName": "Note Application",
         "date": "2024",
         "description": "Developed a note-taking application as a school project similar to Microsoft's OneNote app, with Angular and Firebase. It features user authentication, real-time data synchronization, and CRUD operations for notes. ",
-        "technologies": "Angular, TypeScript, Firebase"
+        "technologies": "Angular, TypeScript, Firebase",
+        "projectLink": "https://github.com/fax-spittah/Note-app"
       }
     ]
   }
