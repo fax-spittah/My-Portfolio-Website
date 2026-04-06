@@ -1,5 +1,16 @@
 # Changelog
 
+## [1.6.1](https://github.com/fax-spittah/My-Portfolio-Website/compare/v1.6.0...v1.6.1) (2026-04-06)
+
+
+### Bug Fixes
+
+* adding more items to the cv skill section ([22f9301](https://github.com/fax-spittah/My-Portfolio-Website/commit/22f9301326fd5e33352b32c9d300f75b29ebbb96))
+* adding skills on profile ([335b304](https://github.com/fax-spittah/My-Portfolio-Website/commit/335b3040e6dee889b8598154f72f3b3604f9ad60))
+* changing marging spacking in cv ([f6e0b20](https://github.com/fax-spittah/My-Portfolio-Website/commit/f6e0b2090515f2f2375aa3a29f79a175e0064398))
+* editing projects ([43f3ab7](https://github.com/fax-spittah/My-Portfolio-Website/commit/43f3ab741822563875dcd9f19c2593dc4173f8ae))
+* editing projects ([76d7385](https://github.com/fax-spittah/My-Portfolio-Website/commit/76d73855858f33cfac2cdb9d7b7bd38957ea748d))
+
 ## [1.6.0](https://github.com/fax-spittah/My-Portfolio-Website/compare/v1.5.0...v1.6.0) (2026-02-07)
 
 
