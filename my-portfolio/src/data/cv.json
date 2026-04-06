@@ -17,14 +17,18 @@
         { "name": "PHP", "proficiency": "Intermediate" },
         { "name": "JavaScript", "proficiency": "Intermediate" },
         { "name": "TypeScript", "proficiency": "Advanced" },
-        { "name": "Kotlin", "proficiency": "Intermediate" }
+        { "name": "Kotlin", "proficiency": "Intermediate" },
+        { "name": "XML (XSD, XSLT, DTD)", "proficiency": "Intermediate" }
       ],
 
       "frameworksAndLibraries": [
-        { "name": "React", "proficiency": "Intermediate" },
+        { "name": "React", "proficiency": "Advanced" },
         { "name": "Angular", "proficiency": "Advanced" },
         { "name": "Laravel", "proficiency": "Beginner" },
+        { "name": "Astro.js", "proficiency": "Intermediate" },
         { "name": ".NET", "proficiency": "Advanced" },
+        { "name": "Next.js", "proficiency": "Intermediate" },
+        { "name": "Tailwind CSS", "proficiency": "Intermediate" },
         { "name": "Ionic", "proficiency": "Beginner" },
         { "name": "Electron", "proficiency": "Beginner" }
       ],
