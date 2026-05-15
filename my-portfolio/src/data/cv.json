@@ -8,7 +8,7 @@
   "cvLeftSide": {
     "skills": {
       "programmingLanguages": [
-        { "name": "C", "proficiency": "Beginner" },
+        { "name": "C", "proficiency": "Intermediate" },
         { "name": "C++", "proficiency": "Intermediate" },
         { "name": "C#", "proficiency": "Advanced" },
         { "name": "Python", "proficiency": "Intermediate" },
@@ -29,8 +29,8 @@
         { "name": ".NET", "proficiency": "Advanced" },
         { "name": "Next.js", "proficiency": "Intermediate" },
         { "name": "Tailwind CSS", "proficiency": "Intermediate" },
-        { "name": "Ionic", "proficiency": "Beginner" },
-        { "name": "Electron", "proficiency": "Beginner" }
+        { "name": "Ionic", "proficiency": "Intermediate" },
+        { "name": "Electron", "proficiency": "Intermediate" }
       ],
 
       "toolsAndPlatforms": [
@@ -97,11 +97,10 @@
         "technologies": "React, Next.js, TypeScript, C# .NET, Azure Communication Services"
       },
       {
-        "projectName": "Note Application",
+        "projectName": "Expense Tracker",
         "date": "2024",
-        "description": "Developed a note-taking application as a school project similar to Microsoft's OneNote app, with Angular and Firebase. It features user authentication, real-time data synchronization, and CRUD operations for notes. ",
-        "technologies": "Angular, TypeScript, Firebase",
-        "projectLink": "https://github.com/fax-spittah/Note-app"
+        "description": "Developed an expense tracking application to help users manage their daily expenses and visualize their spending patterns. I developed it three times: as a web app with Angular, as a mobile app with Ionic, and as a desktop app with Electron. The app allows users to add, edit, and delete expenses, categorize them, and view detailed charts and reports.",
+        "technologies": "Ionic, Angular,  Electron, TypeScript, Capacitor, SCSS, Chart.js, Capacitor"
       }
     ]
   }
