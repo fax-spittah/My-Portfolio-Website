@@ -22,11 +22,11 @@
       ],
 
       "frameworksAndLibraries": [
+        { "name": ".NET, WPF, MAUI", "proficiency": "Advanced" },
         { "name": "React", "proficiency": "Advanced" },
         { "name": "Angular", "proficiency": "Advanced" },
         { "name": "Laravel", "proficiency": "Beginner" },
         { "name": "Astro.js", "proficiency": "Intermediate" },
-        { "name": ".NET", "proficiency": "Advanced" },
         { "name": "Next.js", "proficiency": "Intermediate" },
         { "name": "Tailwind CSS", "proficiency": "Intermediate" },
         { "name": "Ionic", "proficiency": "Intermediate" },
@@ -97,10 +97,11 @@
         "technologies": "React, Next.js, TypeScript, C# .NET, Azure Communication Services"
       },
       {
-        "projectName": "Expense Tracker",
+        "projectName": "Note Application",
         "date": "2024",
-        "description": "Developed an expense tracking application to help users manage their daily expenses and visualize their spending patterns. I developed it three times: as a web app with Angular, as a mobile app with Ionic, and as a desktop app with Electron. The app allows users to add, edit, and delete expenses, categorize them, and view detailed charts and reports.",
-        "technologies": "Ionic, Angular,  Electron, TypeScript, Capacitor, SCSS, Chart.js, Capacitor"
+        "description": "Developed a note-taking application to help users organize their thoughts and ideas. This application is similar to the Microsoft OneNote application, allowing users to create, edit, and delete notes, as well as organize them into notebooks and sections without all the complex and extra functionalities that are not always needed by users.",
+        "technologies": "Angular 17, Bootstrap 5, Quill / ngx-quill, JSON Server for the local mock API",
+        "githubLink": "https://github.com/fax-spittah/Note-app"
       }
     ]
   }
