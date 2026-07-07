@@ -94,7 +94,7 @@
         "projectName": "Avanade Support Hub",
         "date": "Feb 2025 - Jun 2025",
         "description": "Developed a real-time chat platform connecting users with support agents, featuring secure duplex messaging, WebSocket-based updates, multi-agent management, and seamless integration with third-party websites.",
-        "technologies": "React, Next.js, TypeScript, C# .NET, Azure Communication Services"
+        "technologies": "React, Next.js, TypeScript, C# .NET, Azure, Azure Communication Services, OAuth, REST"
       },
       {
         "projectName": "Note Application",
