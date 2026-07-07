@@ -1,106 +1,106 @@
 {
   "cvHeader": {
     "fullNameAllCaps": "EDISON NYINGCHUO KISEH",
-    "title": "Full Stack Developer",
-    "shortDescription": "Junior Full Stack Developer with hands-on experience building production-ready web applications using React, Angular, TypeScript, and C# .NET. Completed a full-stack internship at Avanade, working on a real-time Azure-hosted support platform. Proficient in Front and Back-end development, Agile teamwork, and cleancode practices. Actively seeking a graduate/junior software engineering role with opportunities for growth and learning."
+    "title": "Développeur Full Stack",
+    "shortDescription": "Développeur Full Stack junior avec une expérience pratique dans le développement d'applications web prêtes pour la production utilisant React, Angular, TypeScript et C# .NET. J'ai effectué un stage Full Stack chez Avanade, où j'ai participé au développement d'une plateforme de support en temps réel hébergée sur Azure. Compétent en développement Front-end et Back-end, en méthodologie Agile et en bonnes pratiques de code. Je recherche activement un poste de développeur logiciel junior ou débutant offrant des opportunités d'évolution et d'apprentissage."
   },
 
   "cvLeftSide": {
     "skills": {
       "programmingLanguages": [
-        { "name": "C", "proficiency": "Intermediate" },
-        { "name": "C++", "proficiency": "Intermediate" },
-        { "name": "C#", "proficiency": "Advanced" },
-        { "name": "Python", "proficiency": "Intermediate" },
-        { "name": "HTML/CSS", "proficiency": "Advanced" },
-        { "name": "SQL", "proficiency": "Advanced" },
-        { "name": "PHP", "proficiency": "Intermediate" },
-        { "name": "JavaScript", "proficiency": "Intermediate" },
-        { "name": "TypeScript", "proficiency": "Advanced" },
-        { "name": "Kotlin", "proficiency": "Intermediate" },
-        { "name": "XML (XSD, XSLT, DTD)", "proficiency": "Intermediate" }
+        { "name": "C", "proficiency": "Intermédiaire" },
+        { "name": "C++", "proficiency": "Intermédiaire" },
+        { "name": "C#", "proficiency": "Avancé" },
+        { "name": "Python", "proficiency": "Intermédiaire" },
+        { "name": "HTML/CSS", "proficiency": "Avancé" },
+        { "name": "SQL", "proficiency": "Avancé" },
+        { "name": "PHP", "proficiency": "Intermédiaire" },
+        { "name": "JavaScript", "proficiency": "Intermédiaire" },
+        { "name": "TypeScript", "proficiency": "Avancé" },
+        { "name": "Kotlin", "proficiency": "Intermédiaire" },
+        { "name": "XML (XSD, XSLT, DTD)", "proficiency": "Intermédiaire" }
       ],
 
       "frameworksAndLibraries": [
-        { "name": ".NET, WPF, MAUI", "proficiency": "Advanced" },
-        { "name": "React", "proficiency": "Advanced" },
-        { "name": "Angular", "proficiency": "Advanced" },
-        { "name": "Laravel", "proficiency": "Beginner" },
-        { "name": "Astro.js", "proficiency": "Intermediate" },
-        { "name": "Next.js", "proficiency": "Intermediate" },
-        { "name": "Tailwind CSS", "proficiency": "Intermediate" },
-        { "name": "Ionic", "proficiency": "Intermediate" },
-        { "name": "Electron", "proficiency": "Intermediate" }
+        { "name": ".NET, WPF, MAUI", "proficiency": "Avancé" },
+        { "name": "React", "proficiency": "Avancé" },
+        { "name": "Angular", "proficiency": "Avancé" },
+        { "name": "Laravel", "proficiency": "Débutant" },
+        { "name": "Astro.js", "proficiency": "Intermédiaire" },
+        { "name": "Next.js", "proficiency": "Intermédiaire" },
+        { "name": "Tailwind CSS", "proficiency": "Intermédiaire" },
+        { "name": "Ionic", "proficiency": "Intermédiaire" },
+        { "name": "Electron", "proficiency": "Intermédiaire" }
       ],
 
       "toolsAndPlatforms": [
-        { "name": "Git", "proficiency": "Intermediate" },
-        { "name": "GitHub", "proficiency": "Intermediate" },
-        { "name": "Docker", "proficiency": "Beginner" },
-        { "name": "Azure", "proficiency": "Beginner" },
-        { "name": "Linux", "proficiency": "Intermediate" }
+        { "name": "Git", "proficiency": "Intermédiaire" },
+        { "name": "GitHub", "proficiency": "Intermédiaire" },
+        { "name": "Docker", "proficiency": "Débutant" },
+        { "name": "Azure", "proficiency": "Débutant" },
+        { "name": "Linux", "proficiency": "Intermédiaire" }
       ],
 
       "softSkills": [
-        "Teamwork",
-        "Good Communication",
-        "Problem-solving",
-        "Adaptability",
-        "Cool-headed"
+        "Esprit d'équipe",
+        "Bonne communication",
+        "Résolution de problèmes",
+        "Capacité d'adaptation",
+        "Calme sous pression"
       ],
 
       "spokenLanguages": [
-        { "name": "Kom (Dialect)", "proficiency": "Native" },
-        { "name": "English", "proficiency": "Native" },
-        { "name": "French", "proficiency": "Bilingual (C2)" },
-        { "name": "Dutch", "proficiency": "Elementary (A2)" }
+        { "name": "Kom (dialecte)", "proficiency": "Langue maternelle" },
+        { "name": "Anglais", "proficiency": "Langue maternelle" },
+        { "name": "Français", "proficiency": "Bilingue (C2)" },
+        { "name": "Néerlandais", "proficiency": "Élémentaire (A2)" }
       ]
     }
   },
 
   "cvMainSide": {
     "education": {
-      "name": "Bachelor's in Electronics-ICT - Major ICT",
+      "name": "Bachelier en Électronique-ICT - Spécialisation ICT",
       "date": "2022 - 2025",
       "universityName": "Thomas More University of Applied Sciences",
       "description": [
-        "Graduated with a cum laude (GPA: 3.7) distinction.",
-        "Honors: Received the Willy Asselman award for the best bachelor thesis of Electronics-ICT."
+        "Diplômé avec la distinction cum laude (GPA : 3,7).",
+        "Distinction : Lauréat du prix Willy Asselman récompensant le meilleur mémoire de bachelier en Électronique-ICT."
       ]
     },
 
     "professionalExperience": [
       {
-        "jobTitle": "Full Stack Developer Intern",
+        "jobTitle": "Stagiaire Développeur Full Stack",
         "companyName": "Avanade",
-        "date": "Feb 2025 - Jun 2025",
+        "date": "Fév. 2025 - Juin 2025",
         "responsibilities": [
-          "Developed a real-time support chat platform with React & Next.js for the frontend, and C# .NET for the backend, hosted on Azure.",
-          "Integrated Azure Communication Services to enable duplex messaging and multi-agent support.",
-          "Collaborated in Agile teams, improving sprint delivery efficiency.",
-          "Developed a resuable component library using Rollup.js to encourage code reusability across the different parts of the system."
+          "Développement d'une plateforme de chat de support en temps réel avec React et Next.js pour le frontend, ainsi que C# .NET pour le backend, hébergée sur Azure.",
+          "Intégration d'Azure Communication Services afin de permettre une messagerie bidirectionnelle et le support multi-agents.",
+          "Collaboration au sein d'équipes Agile, contribuant à améliorer l'efficacité des sprints.",
+          "Développement d'une bibliothèque de composants réutilisables avec Rollup.js afin de favoriser la réutilisation du code dans les différentes parties du système."
         ]
       }
     ],
 
     "otherExperience": [
-      "Worked in customer-facing student jobs at Brico, Walibi, Delhaize, and Oxfam.",
-      "Developed strong teamwork and collaboration skills.",
-      "Improved communication and customer service abilities."
+      "Expérience dans des emplois étudiants en contact avec la clientèle chez Brico, Walibi, Delhaize et Oxfam.",
+      "Développement de solides compétences en travail d'équipe et en collaboration.",
+      "Renforcement des capacités de communication et du sens du service client."
     ],
 
     "projects": [
       {
         "projectName": "Avanade Support Hub",
-        "date": "Feb 2025 - Jun 2025",
-        "description": "Developed a real-time chat platform connecting users with support agents, featuring secure duplex messaging, WebSocket-based updates, multi-agent management, and seamless integration with third-party websites.",
+        "date": "Fév. 2025 - Juin 2025",
+        "description": "Développement d'une plateforme de chat en temps réel reliant les utilisateurs aux agents de support, avec messagerie sécurisée bidirectionnelle, mises à jour via WebSockets, gestion multi-agents et intégration transparente avec des sites web tiers.",
         "technologies": "React, Next.js, TypeScript, C# .NET, Azure, Azure Communication Services, OAuth, REST"
       },
       {
-        "projectName": "Note Application",
+        "projectName": "Application de prise de notes",
         "date": "2024",
-        "description": "Developed a note-taking application to help users organize their thoughts and ideas. This application is similar to the Microsoft OneNote application, allowing users to create, edit, and delete notes, as well as organize them into notebooks and sections without all the complex and extra functionalities that are not always needed by users.",
-        "technologies": "Angular 17, Bootstrap 5, Quill / ngx-quill, JSON Server for the local mock API",
+        "description": "Développement d'une application de prise de notes permettant aux utilisateurs d'organiser leurs idées. Inspirée de Microsoft OneNote, elle permet de créer, modifier et supprimer des notes, ainsi que de les organiser en carnets et sections, tout en restant plus légère et plus simple d'utilisation.",
+        "technologies": "Angular 17, Bootstrap 5, Quill / ngx-quill, JSON Server pour l'API locale simulée",
         "githubLink": "https://github.com/fax-spittah/Note-app"
       }
     ]
