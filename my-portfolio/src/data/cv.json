@@ -34,9 +34,9 @@
       ],
 
       "toolsAndPlatforms": [
-        { "name": "Git", "proficiency": "Intermediate" },
-        { "name": "GitHub", "proficiency": "Intermediate" },
-        { "name": "Docker", "proficiency": "Beginner" },
+        { "name": "Git", "proficiency": "Advanced" },
+        { "name": "GitHub", "proficiency": "Advanced" },
+        { "name": "Docker", "proficiency": "Intermediate" },
         { "name": "Azure", "proficiency": "Beginner" },
         { "name": "Linux", "proficiency": "Intermediate" }
       ],
