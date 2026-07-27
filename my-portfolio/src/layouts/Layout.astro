@@ -28,7 +28,9 @@ const shortName = data.shortName;
     </script>
   </head>
 
-  <body class="bg-white dark:bg-black text-black dark:text-white">
-    <slot />
+  <body class="min-h-screen bg-transparent text-slate-900 transition-colors duration-300 dark:text-slate-100">
+    <main class="relative overflow-x-hidden">
+      <slot />
+    </main>
   </body>
 </html>
