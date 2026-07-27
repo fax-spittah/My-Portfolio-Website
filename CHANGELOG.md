@@ -1,5 +1,29 @@
 # Changelog
 
+## [1.7.0](https://github.com/fax-spittah/My-Portfolio-Website/compare/v1.6.0...v1.7.0) (2026-07-27)
+
+
+### Features
+
+* enhance project cards with images and improve theme handling in layout ([6db0f34](https://github.com/fax-spittah/My-Portfolio-Website/commit/6db0f34f841f7538ff6a33cf36fd188e598c2577))
+* making pages modern ([e0e98ad](https://github.com/fax-spittah/My-Portfolio-Website/commit/e0e98ad7664ccedbd45ffc2c2fc3b6724b6aaf59))
+
+
+### Bug Fixes
+
+* adding more items to the cv skill section ([22f9301](https://github.com/fax-spittah/My-Portfolio-Website/commit/22f9301326fd5e33352b32c9d300f75b29ebbb96))
+* adding skills on profile ([335b304](https://github.com/fax-spittah/My-Portfolio-Website/commit/335b3040e6dee889b8598154f72f3b3604f9ad60))
+* changing marging spacking in cv ([f6e0b20](https://github.com/fax-spittah/My-Portfolio-Website/commit/f6e0b2090515f2f2375aa3a29f79a175e0064398))
+* editing projects ([43f3ab7](https://github.com/fax-spittah/My-Portfolio-Website/commit/43f3ab741822563875dcd9f19c2593dc4173f8ae))
+* editing projects ([76d7385](https://github.com/fax-spittah/My-Portfolio-Website/commit/76d73855858f33cfac2cdb9d7b7bd38957ea748d))
+* fixing a dark mode bug on icons ([07adf40](https://github.com/fax-spittah/My-Portfolio-Website/commit/07adf40350af871458a29947946b9df467133fca))
+* modifying cv content ([404a671](https://github.com/fax-spittah/My-Portfolio-Website/commit/404a671bbd373a748c4e9ca2241186474e9dd7d1))
+* modifying cv content ([433e982](https://github.com/fax-spittah/My-Portfolio-Website/commit/433e9822b526c63b59969a8f0b2fe472331c3d26))
+* styling about page ([04655ee](https://github.com/fax-spittah/My-Portfolio-Website/commit/04655eec47e7395a70e435401602f80bf7e485c1))
+* styling the header and footer and fixing responsive issues ([8e5388e](https://github.com/fax-spittah/My-Portfolio-Website/commit/8e5388eb8964452580116126ab99651148177646))
+* styling the home page containing the project cards, icons and the rest of the home page sections ([c57f2b6](https://github.com/fax-spittah/My-Portfolio-Website/commit/c57f2b68a259530644bf814136552419c6261dfb))
+* update full name and enhance global styles for better responsiveness ([ff6d3a0](https://github.com/fax-spittah/My-Portfolio-Website/commit/ff6d3a0da6122f7b66f09d06277ffc87786391ff))
+
 ## [1.6.0](https://github.com/fax-spittah/My-Portfolio-Website/compare/v1.5.0...v1.6.0) (2026-02-07)
 
 
