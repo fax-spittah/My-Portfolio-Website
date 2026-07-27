@@ -7,76 +7,85 @@ const discord = data.contactInformation.discord;
 ---
 
 <footer
-  class="bg-gray-100 dark:bg-black text-gray-900 dark:text-white border-t border-gray-200 dark:border-gray-700"
+  class="border-t border-slate-200 bg-slate-50/80 text-slate-900 backdrop-blur dark:border-slate-800 dark:bg-slate-950/80 dark:text-slate-100"
 >
   <div
-    class="footer-sections flex flex-col md:flex-row w-full justify-between align-left mb-8 px-6 md:px-12 pt-12"
+    class="mx-auto flex max-w-6xl flex-col gap-8 px-4 py-12 sm:px-6 lg:flex-row lg:justify-between lg:px-8"
   >
-    <div class="footer-connect w-full md:w-1/2 mb-8 md:mb-0">
-      <h2
-        class="font-bold text-lg md:text-xl mb-4 text-blue-600 dark:text-blue-400"
-      >
+    <div class="max-w-md">
+      <h2 class="mb-4 text-lg font-semibold text-blue-600 dark:text-blue-400">
         Connect with me
       </h2>
-      <p class="mb-2">
-        <a
-          href={linkedInURL}
-          class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300 font-medium"
-          >LinkedIn</a
-        >
-      </p>
-      <p class="mb-2">
-        <a
-          href=`mailto: ${email}`
-          class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300 font-medium"
-          >Email</a
-        >
-      </p>
-      <p>
-        <a
-          href={discord}
-          class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300 font-medium"
-          >Discord</a
-        >
-      </p>
+      <div class="space-y-2 text-sm text-slate-600 dark:text-slate-300">
+        <p>
+          <a
+            href={linkedInURL}
+            target="_blank"
+            rel="noreferrer"
+            class="transition-colors hover:text-blue-600 dark:hover:text-blue-400"
+            >LinkedIn</a
+          >
+        </p>
+        <p>
+          <a
+            href={`mailto:${email}`}
+            class="transition-colors hover:text-blue-600 dark:hover:text-blue-400"
+            >Email</a
+          >
+        </p>
+        <p>
+          <a
+            href={discord}
+            target="_blank"
+            rel="noreferrer"
+            class="transition-colors hover:text-blue-600 dark:hover:text-blue-400"
+            >Discord</a
+          >
+        </p>
+      </div>
     </div>
 
-    <div class="footer-links w-full md:w-1/2">
-      <h2
-        class="font-bold text-lg md:text-xl mb-4 text-blue-600 dark:text-blue-400"
-      >
+    <div class="max-w-md">
+      <h2 class="mb-4 text-lg font-semibold text-blue-600 dark:text-blue-400">
         Navigation
       </h2>
-      <nav class="footer-nav flex flex-col">
+      <nav
+        class="flex flex-col gap-2 text-sm text-slate-600 dark:text-slate-300"
+      >
         <a
-          href="/"
-          class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300 mb-2 font-medium"
+          href="/home"
+          class="transition-colors hover:text-blue-600 dark:hover:text-blue-400"
           >Home</a
         >
         <a
           href="/about"
-          class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300 mb-2 font-medium"
+          class="transition-colors hover:text-blue-600 dark:hover:text-blue-400"
           >About</a
         >
         <a
           href="/cv"
-          class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300 font-medium"
+          class="transition-colors hover:text-blue-600 dark:hover:text-blue-400"
           >CV</a
         >
       </nav>
     </div>
   </div>
 
-  <div class="border-t border-gray-300 dark:border-gray-600"></div>
-  <div class="md:flex md:justify-between items-center px-6 md:px-12 py-6">
-    <p class="text-sm text-gray-600 dark:text-gray-400 mb-2 md:mb-0">
-      &copy; {new Date().getFullYear()}
-      Edison N. Kiseh. All rights reserved.
-    </p>
-    <a
-      href="https://github.com/fax-spittah/My-Portfolio-Website"
-      target="_blank"
-      class="text-base text-blue-600">Website Source Code</a
+  <div class="border-t border-slate-200 dark:border-slate-800">
+    <div
+      class="mx-auto flex max-w-6xl flex-col gap-3 px-4 py-6 text-sm text-slate-600 sm:px-6 sm:flex-row sm:items-center sm:justify-between lg:px-8 dark:text-slate-400"
     >
+      <p>
+        &copy; {new Date().getFullYear()} Edison Kiseh. All rights reserved.
+      </p>
+      <a
+        href="https://github.com/fax-spittah/My-Portfolio-Website"
+        target="_blank"
+        rel="noreferrer"
+        class="font-medium text-blue-600 transition-colors hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300"
+      >
+        Website Source Code
+      </a>
+    </div>
   </div>
 </footer>
