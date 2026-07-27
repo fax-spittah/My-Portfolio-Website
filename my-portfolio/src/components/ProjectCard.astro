@@ -1,4 +1,6 @@
 ---
+import { Icon } from "astro-icon/components";
+
 interface Props {
   projectTitle: string;
   projectDescription: string;
@@ -16,9 +18,8 @@ const { projectTitle, projectDescription, projectLink, projectImage }: Props =
   <div
     class="mb-4 inline-flex h-11 w-11 items-center justify-center rounded-2xl bg-blue-50 text-blue-600 dark:bg-slate-700/80 dark:text-slate-100"
   >
-    <img
-      src={projectImage}
-      alt={projectTitle}
+    <Icon
+      name={`projectIcons/${projectImage}`}
       class="h-6 w-6 object-contain dark:brightness-0 dark:invert"
     />
   </div>
