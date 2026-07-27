@@ -93,14 +93,14 @@
       {
         "projectName": "Avanade Support Hub",
         "date": "Feb 2025 - Jun 2025",
-        "image": "/src/icons/projectIcons/ash.svg",
+        "image": "ash",
         "description": "Developed a real-time chat platform connecting users with support agents, featuring secure duplex messaging, WebSocket-based updates, multi-agent management, and seamless integration with third-party websites.",
         "technologies": "React, Next.js, TypeScript, C# .NET, Azure, Azure Communication Services, OAuth, REST"
       },
       {
         "projectName": "Note Application",
         "date": "2024",
-        "image": "/src/icons/projectIcons/noteApp.svg",
+        "image": "noteApp",
         "description": "Developed a note-taking application to help users organize their thoughts and ideas. This application is similar to the Microsoft OneNote application, allowing users to create, edit, and delete notes, as well as organize them into notebooks and sections without all the complex and extra functionalities that are not always needed by users.",
         "technologies": "Angular 17, Bootstrap 5, Quill / ngx-quill, JSON Server for the local mock API",
         "githubLink": "https://github.com/fax-spittah/Note-app"
