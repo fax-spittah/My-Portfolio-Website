@@ -13,22 +13,30 @@ const shortName = data.shortName;
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>{shortName}</title>
-    <script src="https://unpkg.com/alpinejs" defer></script>
+    <script is:inline>
+      const savedTheme = localStorage.getItem("theme");
+      const prefersDark = window.matchMedia(
+        "(prefers-color-scheme: dark)",
+      ).matches;
+      const shouldUseDark =
+        savedTheme === "dark" || (!savedTheme && prefersDark);
 
-    <script>
-      if (
-        localStorage.theme === "dark" ||
-        (!("theme" in localStorage) &&
-          window.matchMedia("(prefers-color-scheme: dark)").matches)
-      ) {
-        document.documentElement.classList.add("dark");
-      } else {
-        document.documentElement.classList.remove("dark");
-      }
+      document.documentElement.classList.toggle("dark", shouldUseDark);
+      document.documentElement.style.colorScheme = shouldUseDark
+        ? "dark"
+        : "light";
+      document.documentElement.style.backgroundColor = shouldUseDark
+        ? "#020617"
+        : "#f8fbff";
     </script>
+    <script src="https://unpkg.com/alpinejs" defer></script>
   </head>
 
-  <body class="bg-white dark:bg-black text-black dark:text-white">
-    <slot />
+  <body
+    class="min-h-screen bg-transparent text-slate-900 transition-colors duration-300 dark:text-slate-100"
+  >
+    <main class="relative overflow-x-hidden">
+      <slot />
+    </main>
   </body>
 </html>

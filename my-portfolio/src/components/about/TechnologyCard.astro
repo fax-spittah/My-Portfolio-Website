@@ -10,10 +10,8 @@ const { title, technologies }: Props = Astro.props;
 ---
 
 <div class={title}>
-  <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-4">{title}</h3>
-  <div
-    class="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-lg border border-gray-200 dark:border-gray-700 p-4 space-y-3 transition-all duration-300 hover:-translate-y-1"
-  >
+  <h3 class="mb-4 text-lg font-semibold text-slate-900 dark:text-white">{title}</h3>
+  <div class="space-y-3 rounded-[1.25rem] border border-slate-200/80 bg-white/90 p-4 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md dark:border-slate-700/80 dark:bg-slate-800/80">
     {
       technologies.map((tech) => (
         <TechnologyIconAndName
