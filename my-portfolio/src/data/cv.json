@@ -29,6 +29,7 @@
         { "name": "Astro.js", "proficiency": "Intermediate" },
         { "name": "Next.js", "proficiency": "Intermediate" },
         { "name": "Tailwind CSS", "proficiency": "Intermediate" },
+        { "name": "JQuery", "proficiency": "Intermediate" },
         { "name": "Ionic", "proficiency": "Intermediate" },
         { "name": "Electron", "proficiency": "Intermediate" }
       ],
