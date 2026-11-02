@@ -11,7 +11,7 @@
         { "name": "C", "proficiency": "Intermediate" },
         { "name": "C++", "proficiency": "Intermediate" },
         { "name": "C#", "proficiency": "Advanced" },
-        { "name": "Python", "proficiency": "Intermediate" },
+        { "name": "Python", "proficiency": "Advanced" },
         { "name": "HTML/CSS", "proficiency": "Advanced" },
         { "name": "SQL", "proficiency": "Advanced" },
         { "name": "PHP", "proficiency": "Intermediate" },
